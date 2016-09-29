@@ -57,3 +57,7 @@ a:active {
 	color: #413552;
 	font-size: 24px;
 }
+
+body {
+	align-content: center;
+}
