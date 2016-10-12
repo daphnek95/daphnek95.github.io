@@ -2,5 +2,16 @@
 /* CSS Document */
 
 body {
-	background-image: url(cyber.png)
+	background-image: url(cyber.png);
+}
+
+#box {
+	border-top: 8px solid #2ED6AC;
+	border-left: 8px solid #2ED6AC;
+	border-bottom: 8px solid #50FFD3;
+	border-right: 8px solid #50FFD3;
+	background-color: #fff;
+	margin: 60px auto 100px auto;
+	width: 960px;
+	padding: 15px 50px;
 }
