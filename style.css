@@ -10,76 +10,47 @@ body {
 	border-left: 8px solid #2ED6AC;
 	border-bottom: 8px solid #50FFD3;
 	border-right: 8px solid #50FFD3;
+	box-shadow: 0px 0px 85px black;
 	background-color: #fff;
-	margin: 60px auto 100px auto;
+	margin: 130px auto 100px auto;
 	width: 960px;
-	padding: 15px 50px;
+	padding: 80px 50px;
+	text-align: center;
+	font-family: Gotham, sans-serif;
+	line-height: 5px;
 }
 
 header {
-	padding: 0px 12px;
-	width: 260px;
-	text-align: center;
-	line-height: 25px;
-	font-family: Book Antiqua, serif;
-}
-
-nav {
-	text-align: center;
-	margin: 0px 0px 3px 0px;
-	border-bottom: 3px solid #89341A;
-	font-family: Helvetica, sans-serif;
+	font-family: Monaco, monospace;
+	font-size: 20px;
 }
 
 main {
-	text-align: center;
-	font-family: Helvetica, sans-serif;
+	font-size: 72px;
+	line-height: 115px;
 }
 
 footer {
-	text-align: center;
-	margin: 3px 0px 0px 0px;
-	border-top: 3px solid #89341A;
-	font-family: Book Antiqua, serif;
-}
-
-.serifheaders {
-	font-family: Book Antiqua, serif;
-}
-
-a {
-	color: #D68E78;
-	text-decoration: none;
+	font-family: Monaco, monospace;
 	font-size: 18px;
 }
 
+a {
+	border-top: 3px solid #89341A;
+	border-left: 3px solid #89341A;
+	border-bottom: 3px solid #D68E78;
+	border-right: 3px solid #D68E78;
+	padding: 8px 12px;
+	color: #000;
+	/* Gradient Backdrop */
+	background: rgb(214,142,120); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(214,142,120,1) 12%, rgba(137,52,26,1) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(214,142,120,1) 12%,rgba(137,52,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  rgba(214,142,120,1) 12%,rgba(137,52,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d68e78', endColorstr='#89341a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	text-decoration: none;
+}
+
 a:hover {
-	color: #89341A;
-}
-
-.listingp {
-	line-height: 30px;
-}
-
-#generalheight {
-	line-height: 20px;
-}
-
-h2 {
-	margin: 40px 0px 0px 0px;
-	line-height: 10px;
-}
-
-#openingbox {
-	margin: 5px;
-}
-
-.listbox {
-	margin: 10px;
-}
-
-h3 {
-	line-height: 1px;
-	margin: 40px 0px 0px 0px;
-	padding: 0px;
+	cursor: pointer;
 }
