@@ -81,7 +81,7 @@ a:hover {
 }
 
 img {
-	padding: 72.5px;
+	padding: 93px;
 }
 
 #centerit {
@@ -97,4 +97,12 @@ footer {
 	width: 900px;
 	display: inline-block;
 	box-shadow: 0px 0px 8px black;
+}
+
+p {
+	font-family: Gotham, sans-serif;
+}
+
+h2 {
+	font-family: Monaco, monospace;
 }
