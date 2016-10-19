@@ -7,10 +7,6 @@ body {
 }
 
 
-a:hover {
-	cursor: pointer;
-}
-
 #headfloat {
 	text-align: center;
 	float: right;
