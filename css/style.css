@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+}
+
+nav { /*to do a drop down menu you may need to create a div just to hold everything you are doing within a fixed position with a z-index of 1 so it stays ON TOP of your parallax scroll, allowing minimal space to be taken up*/
+	position: fixed;
+	z-index: 1;
+	text-align: center;
+	margin: 10px;
+	font-size: 18px;
+	font-family: 'Dosis', sans-serif;
+}
+
+nav a {
+	text-decoration: none;
+	color: #A7FFEB;
+}
+
+.dropbtn {
+	background-color: rgba(0,0,0,0.5);
+	color: #A7FFEB;
+	width: 120px;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.dropdown-content a {
+	color: #A7FFEB;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+nav img {
+	padding: 0 0 10px;
+}
+
+.one {
+	height: 100%;
+	width: 50%;
+	background-color: rgba(103,179,117,0.50);
+	margin: 0;
+	display: inline-block;
+	float: left;
+}
+
+.two {
+	height: 100%;
+	width: 50%;
+	background-color: rgba(192,237,203,0.50);
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#home, #about, #photography, #graphicdesign, #webdesign, #sounddesign, #webvideo, #contact, #footer {
+	background-position: coords;
+     -webkit-background-size: 'cover';
+     -moz-background-size: 'cover';
+     -o-background-size: 'cover';
+     background-size: 'cover';
+}
+
+#home {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#home article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 400px;
+	width: 100%;
+}
+
+#home h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 72px;
+	margin: auto;
+	padding: 40px;
+	color: #1DE9B6;
+	border-top: solid 8px;
+	border-bottom: solid 8px #00796B;
+	background-color: #272727;
+	width: 100%;
+	
+}
+
+#about,#contact {
+	background-color: #292929;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#about article,#contact article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 200px;
+	width: 100%;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	color: #1DE9B6;
+	
+}
+
+#about div,#contact div {
+	margin: auto;
+	width: 75%;
+}
+
+#about h2,#contact h2 {
+	font-size: 72px;
+}
+
+#about p,#contact p {
+	font-size: 30px;
+	width: 50%;
+	margin: auto;
+}
+
+#photography {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#photography article {
+	height: 90%;
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	width: 100%;
+}
+
+#graphicdesign {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#graphicdesign article {
+	height: 90%;
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	width: 100%;
+}
+
+#webdesign {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#webdesign article {
+	height: 90%;
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	width: 100%;
+}
+
+#sounddesign {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#sounddesign article {
+	height: 90%;
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	width: 100%;
+}
+
+#webvideo {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#webvideo article {
+	height: 90%;
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	width: 100%;
+}
+
+#contact a {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	color: #1DE9B6;
+	text-decoration: none;
+}
+
+#footer {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#footer article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 425px;
+	margin: auto;
+	width: 100%;
+}
