@@ -104,10 +104,7 @@ nav img {
 	margin: auto;
 	padding: 40px;
 	color: #1DE9B6;
-	border-top: solid 8px;
-	border-bottom: solid 8px #00796B;
-	background-color: #272727;
-	width: 100%;
+	background-color: rgba(34,33,34,0.5);
 	
 }
 
