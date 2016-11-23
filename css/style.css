@@ -3,6 +3,7 @@
 
 body {
 	margin: 0;
+	max-width: 1920px;
 }
 
 nav { /*to do a drop down menu you may need to create a div just to hold everything you are doing within a fixed position with a z-index of 1 so it stays ON TOP of your parallax scroll, allowing minimal space to be taken up*/
@@ -69,6 +70,10 @@ nav img {
 	width: 50%;
 	margin: 0 auto;
 	display: inline-block;
+}
+
+img {
+	margin: 200px auto;
 }
 
 #home, #about, #photography, #graphicdesign, #webdesign, #sounddesign, #webvideo, #contact, #footer {
