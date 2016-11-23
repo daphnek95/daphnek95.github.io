@@ -69,13 +69,9 @@ nav img {
 
 .two {
 	height: 100%;
-	width: 50%;
+	width: 75%;
 	margin: 0 auto;
 	display: inline-block;
-}
-
-.img {
-	margin: 200px auto;
 }
 
 #about, #projectone,#projecttwo,#projectthree,#projectfour,#contact {
