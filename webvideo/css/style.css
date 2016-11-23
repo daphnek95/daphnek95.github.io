@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* CSS Document */
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+nav { /*to do a drop down menu you may need to create a div just to hold everything you are doing within a fixed position with a z-index of 1 so it stays ON TOP of your parallax scroll, allowing minimal space to be taken up*/
+	position: fixed;
+	z-index: 1;
+	text-align: center;
+	margin: 10px;
+	font-size: 18px;
+	font-family: 'Dosis', sans-serif;
+}
+
+nav a {
+	text-decoration: none;
+	color: #A7FFEB;
+}
+
+.dropbtn {
+	background-color: rgba(0,0,0,0.5);
+	color: #A7FFEB;
+	width: 120px;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.dropdown-content a {
+	color: #A7FFEB;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+nav img {
+	padding: 0 0 10px;
+}
+
+.one {
+	height: 100%;
+	width: 25%;
+	background-color: rgba(0,0,0,0.2);
+	margin: 0;
+	display: inline-block;
+	float: left;
+}
+
+.two {
+	height: 100%;
+	width: 50%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.img {
+	margin: 200px auto;
+}
+
+#about, #projectone,#projecttwo,#projectthree,#projectfour,#contact {
+	background-position: coords;
+     -webkit-background-size: 'cover';
+     -moz-background-size: 'cover';
+     -o-background-size: 'cover';
+     background-size: 'cover';
+}
+
+#projectone h1,#projecttwo h1,#projectthree h1,#projectfour h1 {
+	margin: 200px auto 0px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	font-size: 36px;
+	color: #A7FFEB;
+}
+
+#projectone p,#projecttwo p,#projectthree p,#projectfour p {
+	margin: 80px 50px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	color: #00BFA5;
+}
+
+#home {
+	background: url(../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#home article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 400px;
+	width: 100%;
+}
+
+#home h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 72px;
+	margin: auto;
+	padding: 40px;
+	color: #1DE9B6;
+	background-color: rgba(34,33,34,0.5);
+	
+}
+
+#about,#contact {
+	background-color: #292929;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#about article,#contact article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 200px;
+	width: 100%;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	color: #1DE9B6;
+	
+}
+
+#about div,#contact div {
+	margin: auto;
+	width: 75%;
+}
+
+#about h2,#contact h2 {
+	font-size: 72px;
+}
+
+#about p,#contact p {
+	font-size: 30px;
+	width: 50%;
+	margin: auto;
+}
+
+#projectone,#projecttwo,#projectthree,#projectfour {
+	background: url(../../img/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#projectone article,#projecttwo article,#projectthree article,#projectfour article {
+	height: 90%;
+	margin: 0 50px;
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	width: 100%;
+}
+
+#contact a {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	color: #A7FFEB;
+	text-decoration: none;
+}

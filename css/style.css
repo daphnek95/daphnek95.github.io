@@ -1,7 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
-body {
+html,body {
 	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
 }
 
 nav { /*to do a drop down menu you may need to create a div just to hold everything you are doing within a fixed position with a z-index of 1 so it stays ON TOP of your parallax scroll, allowing minimal space to be taken up*/
