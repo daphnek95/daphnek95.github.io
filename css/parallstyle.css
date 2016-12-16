@@ -8,6 +8,7 @@ html,body {
 	min-height: 1000px;
 	width: 100%;
 	overflow-x: hidden;
+	font-family: Helvetica;
 }
 
 img {
@@ -31,7 +32,7 @@ a.active {
 	color: #27B68E;
 }
 
-#home,#art,#resume {
+#home,#art,#photography1,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1,#resume,#contact {
 	background-position: coords;
      -webkit-background-size: 'cover';
      -moz-background-size: 'cover';
@@ -102,7 +103,7 @@ nav {
 	padding: 0.25%;
 }
 
-#resume1 {
+#resume {
 	background: url(../media/cyber.png) 50% 0 repeat fixed;
 	background-size: cover;
 	min-height: 1000px;
@@ -112,10 +113,65 @@ nav {
 	position: relative;
 }
 
-#resume1 article {
+#resume article {
 	height: 458px;
 	position: absolute;
 	text-align: center;
 	top: 20px;
 	width: 100%;
+}
+
+#resume main {
+	background-color: #1F1F21;
+	margin: 10% 0;
+	padding: 2%;
+}
+
+#contact {
+	background: #1F1F21 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#contact article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 100%;
+	color: #D7C962;
+}
+
+#contact img {
+	margin: 5% auto 0;
+}
+
+#contact div {
+	margin: 10% 0 0;
+}
+
+#contact a.main {
+	padding: 0;
+	color: #D7C962;
+	text-shadow: 2px 2px 0px #000;
+}
+
+#contact a.main:hover {
+	color: #fff;
+}
+
+#contact h2 {
+	font-size: 72px;
+	margin: 0;
+	color: #27B68E;
+}
+
+#contact p {
+	width: 75%;
+	margin: auto;
+	font-size: 16px;
 }
