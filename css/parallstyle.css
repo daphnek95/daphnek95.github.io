@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,body {
+	margin: 0;
+	padding: 0;
+	max-width: 1920px;
+	min-height: 1000px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	padding: 2%;
+	color: #D7C962;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 18px;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a.active {
+	color: #27B68E;
+}
+
+#home,#art,#resume {
+	background-position: coords;
+     -webkit-background-size: 'cover';
+     -moz-background-size: 'cover';
+     -o-background-size: 'cover';
+     background-size: 'cover';
+}
+
+#home {
+	background: #1F1F21 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#home article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 100%;
+}
+
+#home img {
+	margin: 10% auto 0;
+}
+
+#art {
+	background: url(../media/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#art article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 100%;
+}
+
+#photography1,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1 {
+	background: url(../media/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#photography1 article,#graphicdesign1 article,#videography1 article,#sounddesign1 article,#softwaredesign1 article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 100%;
+}
+
+nav {
+	background-color: rgba(0,0,0,0.5);
+	padding: 0.25%;
+}
+
+#resume1 {
+	background: url(../media/cyber.png) 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#resume1 article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 100%;
+}
