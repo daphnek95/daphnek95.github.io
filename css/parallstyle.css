@@ -135,7 +135,7 @@ nav {
 #art main {
 	margin: 2% auto;
 	text-align: center;
-	width: 90%;
+	width: 100%;
 }
 
 #left,#right {
@@ -162,7 +162,7 @@ nav {
 	width: 55%;
 	float: left;
 	display: inline-block;
-	margin: 2% 0;
+	margin: 1% 0;
 	padding: 2%;
 }
 
