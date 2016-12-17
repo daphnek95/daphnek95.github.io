@@ -37,7 +37,7 @@ nav {
 	padding: 0.25%;
 }
 
-#title,#home,#art,#photography1,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1,#resume,#contact {
+#title,#home,#art,#photography1,#photography2,#photography3,#photography4,#photography5,#photography6,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1,#resume,#contact {
 	background-position: coords;
      -webkit-background-size: 'cover';
      -moz-background-size: 'cover';
@@ -87,6 +87,7 @@ nav {
 
 #home main {
 	background-color: #1F1F21;
+	box-shadow: 0px 0px 5px #000;
 	margin: 10% 0;
 	padding: 10%;
 }
@@ -145,6 +146,7 @@ nav {
 	width: 15%;
 	height: 675px;
 	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 5px #000;
 }
 
 #left a,#right a {
@@ -159,6 +161,7 @@ nav {
 #art div.outer {
 	border: solid 2px rgba(0,0,0,0.5);
 	background-color: rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px #000;
 	width: 55%;
 	float: left;
 	display: inline-block;
@@ -166,7 +169,7 @@ nav {
 	padding: 1.5%;
 }
 
-#photography1,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1 {
+#photography1,#photography2,#photography3,#photography4,#photography5,#photography6,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1 {
 	background: url(../media/cyber.png) 50% 0 repeat fixed;
 	background-size: cover;
 	min-height: 1000px;
@@ -176,12 +179,37 @@ nav {
 	position: relative;
 }
 
-#photography1 article,#graphicdesign1 article,#videography1 article,#sounddesign1 article,#softwaredesign1 article {
+#photography1 article,#photography2 article,#photography3 article,#photography4 article,#photography5 article,#photography6 article,#graphicdesign1 article,#videography1 article,#sounddesign1 article,#softwaredesign1 article {
 	height: 458px;
 	position: absolute;
 	text-align: center;
 	top: 20px;
 	width: 100%;
+}
+
+#photography1 h1,#photography2 h1,#photography3 h1,#photography4 h1,#photography5 h1,#photography6 h1,#graphicdesign1 h1,#videography1 h1,#sounddesign1 h1,#softwaredesign1 h1 {
+	color: #D7C962;
+	margin: 2% 0px;
+}
+
+#photography1 p,#photography2 p,#photography3 p,#photography4 p,#photography5 p,#photography6 p,#graphicdesign1 p,#videography1 p,#sounddesign1 p,#softwaredesign1 p {
+	color: #FFFFFF;
+	margin: 2% 0px;
+}
+
+.one,.two {
+	width: 35%;
+	float: left;
+	display: inline-block;
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 5px #000;
+	margin: 5%;
+	padding: 2%;
+	height: 300px;
+}
+
+.one img,.two img {
+	padding: 2%;
 }
 
 #resume {
@@ -204,6 +232,7 @@ nav {
 
 #resume main {
 	background-color: #1F1F21;
+	box-shadow: 0px 0px 5px #000;
 	margin: 10% 0;
 	padding: 2%;
 }
