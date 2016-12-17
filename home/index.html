@@ -6,16 +6,17 @@
 <title>Daphne Elizabeth Studio</title>
 
 <link rel="stylesheet" style="text/css" href="../css/parallstyle.css"> 
-
+<link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
 </head>
 
 <body>
 	<header>
-		<section id="home" data-type="background" data-speed="10">
+		<section id="title" data-type="background" data-speed="10">
 			<article>
 				<img src="../media/stamp.png" style="margin-left:auto;margin-right:auto"/>
 				<p>
-					<a href="#home" class="active">Home</a>
+					<a href="#home">Home</a>
 					<a href="#art">Art</a><a href="#resume">Resume</a>
 					<a href="#contact">Contact</a>
 				</p>
@@ -23,6 +24,23 @@
 		</section>
 	</header>
 	<main>
+		<section id="home" data-type="background" data-speed="10">
+			<article>
+				<nav>
+					<p>
+						<a href="#home" class="active">Home</a>
+						<a href="#art">Art</a>
+						<a href="#resume">Resume</a>
+						<a href="#contact">Contact</a>
+					</p>
+				</nav>
+				<main>
+					<h2>#welcome</h2>
+					<p>My name is Daphne Kraft and I am Arts Technology major, currently studying at Illinois State University.</p>
+					<p>I enjoy exploring and experimenting with new art mediums. Mainly, I take portraits for people. If you're looking for a photographer, you can contact me <a href="#contact" class="main">down below</a>.</p>
+				</main>
+			</article>
+		</section>
 		<section id="art" data-type="background" data-speed="10">
 			<article>
 				<nav>
@@ -34,6 +52,30 @@
 					</p>
 				</nav>
 				<main>
+					<div id="left">
+						<p>
+							<a href="#">Photography</a><br>
+							<a href="#">Videography</a><br>
+							<a href="#">Graphic Design</a>
+						</p>
+					</div>
+					<!--SLICK plugin here! -->
+					<!-- images for plugin cannot exceed 815px wide by 675px tall -->
+					<div class="outer">
+						<div class="slick">
+							<div><img src="../media/button.png" style="margin-left:auto;margin-right:auto;max-width:100%;height:auto"/></div>
+							<div><img src="../media/logo.png" style="margin-left:auto;margin-right:auto;max-width:100%;height:auto"/></div>
+							<div><img src="../media/smalllogo.png" style="margin-left:auto;margin-right:auto;max-width:100%;height:auto"/></div>
+							<div><img src="../media/stamp.png" style="margin-left:auto;margin-right:auto;max-width:100%;height:auto"/></div>
+						</div>
+					</div>
+					<div id="right">
+						<p>
+							<a href="#">Software Design</a><br>
+							<a href="#">Sound Design</a><br>
+							<a href="#">Internships</a>
+						</p>
+					</div>
 				</main>
 			</article>
 		</section>
@@ -76,5 +118,24 @@
 	</main>
 	<footer>
 	</footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../js/slick/slick.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.slick').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: false
+		});
+	});
+</script>	
 </body>
 </html>

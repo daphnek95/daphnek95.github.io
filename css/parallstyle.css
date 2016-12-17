@@ -32,7 +32,12 @@ a.active {
 	color: #27B68E;
 }
 
-#home,#art,#photography1,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1,#resume,#contact {
+nav {
+	background-color: rgba(0,0,0,0.5);
+	padding: 0.25%;
+}
+
+#title,#home,#art,#photography1,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1,#resume,#contact {
 	background-position: coords;
      -webkit-background-size: 'cover';
      -moz-background-size: 'cover';
@@ -40,8 +45,30 @@ a.active {
      background-size: 'cover';
 }
 
-#home {
+#title {
 	background: #1F1F21 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#title article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 100%;
+}
+
+#title img {
+	margin: 10% auto 0;
+}
+
+#home {
+	background: url(../media/cyber.png) 50% 0 repeat fixed;
 	background-size: cover;
 	min-height: 1000px;
 	margin: 0;
@@ -58,8 +85,33 @@ a.active {
 	width: 100%;
 }
 
-#home img {
-	margin: 10% auto 0;
+#home main {
+	background-color: #1F1F21;
+	margin: 10% 0;
+	padding: 10%;
+}
+
+#home h2 {
+	font-size: 72px;
+	margin: 0;
+	color: #27B68E;
+}
+
+#home p {
+	color: #D7C962;
+	width: 75%;
+	margin: auto;
+	font-size: 20px;
+}
+
+#home a.main {
+	padding: 0;
+	color: #D7C962;
+	text-shadow: 2px 2px 0px #000;
+}
+
+#home a.main:hover {
+	color: #fff;
 }
 
 #art {
@@ -80,6 +132,40 @@ a.active {
 	width: 100%;
 }
 
+#art main {
+	margin: 2% auto;
+	text-align: center;
+	width: 90%;
+}
+
+#left,#right {
+	float: left;
+	display: inline-block;
+	margin: 25px;
+	width: 15%;
+	height: 675px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#left a,#right a {
+	line-height: 6;
+	color: #fff;
+}
+
+#left a:hover,#right a:hover{
+	color: #D7C962;
+}
+
+#art div.outer {
+	border: solid 2px rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.75);
+	width: 55%;
+	float: left;
+	display: inline-block;
+	margin: 2% 0;
+	padding: 2%;
+}
+
 #photography1,#graphicdesign1,#videography1,#sounddesign1,#softwaredesign1 {
 	background: url(../media/cyber.png) 50% 0 repeat fixed;
 	background-size: cover;
@@ -96,11 +182,6 @@ a.active {
 	text-align: center;
 	top: 20px;
 	width: 100%;
-}
-
-nav {
-	background-color: rgba(0,0,0,0.5);
-	padding: 0.25%;
 }
 
 #resume {
