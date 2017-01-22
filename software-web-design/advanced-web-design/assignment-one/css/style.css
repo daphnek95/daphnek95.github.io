@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 1920px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	text-align: center;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #161719;
+	padding: 0.5%;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	color: #FFF;
+	box-shadow: 0 -2px 8px 1px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+a {
+	color: #D7C962;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+}
+
+footer a {
+	padding: 1%;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a.active {
+	color: #27B68E;
+}
+
+h2 {
+	font-family: helvetica, sans-serif;
+	color: #C31919;
+	padding: 2% 0 0;
+	margin: 0;
+}
+
+#title {
+	background: url(../background.png) no-repeat center center fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	box-shadow: 0 2px 5px 1px rgba(0,0,0,0.5);
+	background-position: coords;
+     -webkit-background-size: 'cover';
+     -moz-background-size: 'cover';
+     -o-background-size: 'cover';
+}
+
+#title article {
+	min-height: 850px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 12% 0;
+}
+
+#content {
+	background: #fff 50% repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0;
+	padding: 15% 0 20% 0;
+	font-family: Helvetica, sans-serif;
+	color: #FFF;
+}
+
+.banner {
+	background-color: #161719;
+	margin: 10% 0;
+	padding: 8% 15%;
+	box-shadow: 0 0 8px 2px rgba(0,0,0,0.75);
+}
+
+.banner h1 {
+	font-size: 72px;
+	margin: 0;
+	color: #C31919;
+}
+
+.banner p {
+	color: #D7C962;
+	width: 75%;
+	margin: auto;
+	font-size: 20px;
+}
+
+.banner a {
+	color: #FFF;
+}
+
+.banner a:hover {
+	color: #D7C962;
+}
+
+#intro {
+	margin: 0;
+	padding: 0;
+}
+
+#outer {
+	border: 6px solid #D7C962;
+	background-color: #161719;
+	width: 50%;
+	text-align: center;
+	margin: 2% auto 25%;
+	padding: 2%;
+	box-shadow: 0 0 8px 2px rgba(0,0,0,0.75);
+}
+
+video {
+	width: 100%;
+	height: auto;
+}
+
+#outro {
+	margin: 0;
+	padding: 0 0 15%;
+}
