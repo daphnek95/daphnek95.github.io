@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	margin: 0;
+	padding: 0;
+	max-width: 1920px;
+	min-height: 1000px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+nav {
+	text-align: center;
+	color: #1E2B43;
+	font-family: 'Barrio', cursive;
+	font-size: 46px;
+}
+
+body {
+	background-color: #80C6F0;
+}
+
+#container {
+	margin: 12% auto;
+	width: 10%;
+}
+
+#body {
+	border: 2px solid #A1797A;
+	background-color: #A1797A;
+	border-radius: 50%;
+	width: 120px;
+	height: 145px;
+	position: absolute;
+	left: 50%;
+	z-index: 2;
+}
+
+#oneeye {
+	border: 2px solid #644E4F;
+	background-color: #282423;
+	border-radius: 50%;
+	width: 20px;
+	height: 25px;
+	margin: 50px 52px;
+	position: absolute;
+	left: 50%;
+	z-index: 3;
+}
+
+.legs {
+	z-index: 1;
+	border: 1px solid #5B4C60;
+	background-color: #7B5657;
+	border-radius: 50%;
+	width: 20px;
+	height: 140px;
+	position: absolute;
+	margin: 5% 0;
+}
+
+#bubbleone {
+	z-index: 0;
+	border: 2px solid #6E808C;
+	background-color: #B6C9D6;
+	width: 58px;
+	height: 70px;
+	position: absolute;
+	margin: 1% 0;
+	border-radius: 50%;
+	animation: bubbleone-ani 7s linear infinite;
+}
+
+#bubbletwo {
+	z-index: 0;
+	border: 2px solid #6E808C;
+	background-color: #B6C9D6;
+	width: 58px;
+	height: 70px;
+	position: absolute;
+	margin: 3% 0;
+	border-radius: 50%;
+	animation: bubbletwo-ani 5s linear infinite;
+}
+
+@keyframes bubbleone-ani {
+	0% {opacity: .0; margin: 8% 0;}
+	50% {opacity: 1; margin: 15% 0;}
+	100% {opacity: .0; margin: 20% 0;}
+}
+
+@keyframes bubbletwo-ani {
+	0% {opacity: .0; margin: 4% 0;}
+	50% {opacity: 1; margin: 10% 0;}
+	100% {opacity: .0; margin: 16% 0;}
+}
