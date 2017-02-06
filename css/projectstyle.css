@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 1920px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background: url('../logo/cyber.png') repeat fixed;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #1F1F21;
+	padding: 0.5%;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	color: #FFF;
+	box-shadow: 0 -2px 8px 1px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+a {
+	color: #D7C962;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+}
+
+footer a {
+	padding: 1%;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a.active {
+	color: #27B68E;
+}
+
+img {
+	max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+p {
+	font-size: 16px;
+	color: #FFF;
+	font-family: Helvetica, sans-serif;
+}
+
+#title, #makayla, #aiesha, #raider, #windyCW, #immersion, #paperPlanes, #christmasKP, #main  {
+	background-position: coords;
+     -webkit-background-size: 'cover';
+     -moz-background-size: 'cover';
+     -o-background-size: 'cover';
+     background-size: 'cover';
+}
+
+#title {
+	background: #1F1F21 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 1000px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	box-shadow: 0 2px 5px 1px rgba(0,0,0,0.5);
+}
+
+#title article {
+	min-height: 1000px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 12% 0;
+}
+
+#title h1 {
+	color: #27B68E;
+	font-size: 200%;
+	font-family: Helvetica, sans-serif;
+}
+
+#alison {
+	background: url('../media/alisonBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 510px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#alison article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#makayla {
+	background: url('../media/makaylaBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#makayla article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#aiesha {
+	background: url('../media/aieshaBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#aiesha article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#raider {
+	background: url('../media/raiderBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#raider article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#windyCW {
+	background: url('../media/windyCityBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#windyCW article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#immersion {
+	background: #1F1F21 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#immersion article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#paperPlanes {
+	background: url('../media/paperPlanesBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#paperPlanes article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#christmasKP {
+	background: url('../media/christmasKPBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#christmasKP article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
