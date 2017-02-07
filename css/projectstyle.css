@@ -184,7 +184,7 @@ p {
 }
 
 #immersion {
-	background: #1F1F21 50% 0 repeat fixed;
+	background: url('../media/immersionBANNER.png') 50% 0 repeat fixed;
 	background-size: cover;
 	min-height: 500px;
 	margin: 0;

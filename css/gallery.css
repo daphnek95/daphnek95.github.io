@@ -14,29 +14,37 @@ html,body {
 	text-align: center;
 }
 
-nav {
-	background-color: rgba(0,0,0,0.5);
-	padding: 0.25%;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-a {
-	padding: 2%;
+body a {
+	color: #27B68E;
+	text-decoration: none;
+	font-family: Helvetica;
+}
+
+body a:hover {
+	color: #fff;
+}
+
+body h3 {
+	color: #D7C962;
+	background-color: rgba(31,31,33,0.75);
+	margin: 45px auto;
+	padding: 20px;
+}
+
+footer a {
+	padding: 15px;
 	color: #D7C962;
 	text-decoration: none;
 	font-family: Helvetica;
 }
 
-a:hover {
+footer a:hover {
 	color: #fff;
-}
-
-a.active {
-	color: #27B68E;
 }
 
 div.outer {
@@ -44,8 +52,8 @@ div.outer {
 	background-color: #0C0D0D;
 	box-shadow: 0px 0px 10px #000;
 	width: 50%;
-	margin: 2% auto;
-	padding: 4%;
+	margin: 20px auto;
+	padding: 25px 32px 5px;
 }
 
 footer {
