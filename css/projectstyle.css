@@ -54,7 +54,7 @@ p {
 	font-family: Helvetica, sans-serif;
 }
 
-#title, #makayla, #aiesha, #raider, #windyCW, #immersion, #paperPlanes, #christmasKP, #main  {
+#title, #makayla, #aiesha, #raider, #windyCW, #immersion, #paperPlanes, #christmasKP, #main, #cuddlePants  {
 	background-position: coords;
      -webkit-background-size: 'cover';
      -moz-background-size: 'cover';
@@ -232,6 +232,25 @@ p {
 }
 
 #christmasKP article {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(31,31,33,0.75);
+	margin: 200px auto;
+	padding: 15px;
+}
+
+#cuddlePants {
+	background: url('../media/cuddlePantsBANNER.png') 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 500px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#cuddlePants article {
 	position: absolute;
 	text-align: center;
 	width: 100%;
