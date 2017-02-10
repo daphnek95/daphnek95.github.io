@@ -1,3 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	max-width: 1920px;
+	min-height: 1000px;
+	overflow: hidden;
+	margin: 0;
+	text-align: center;
+	background-color: #655376;
+}
+
+img {
+	max-width: 50%;
+	height: auto;
+	margin: 40px auto;
+}
