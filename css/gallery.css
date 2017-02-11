@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+COLOR SCHEME:
+	#dde5e1 OR rgb(221,229,225)
+	#a5b3af OR rgb(165,179,175)
+	#7b8689 OR rgb(123,134,137)
+	#4d4240 OR rgb(77,66,64)
+	#007978 OR rgb(0,121,120)
+	#856d17 OR rgb(133,109,23)
+
+IMPORTANT ACCENT COLOR:
+	#d6666f OR rgb(214,102,111)
+*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #dde5e1;
+	overflow-x: hidden;
+	text-align: center;
+	font-family: 'Sansita', cursive;
+}
+
+header {
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	background: url('../media/siteBanner.png');
+}
+
+header h1 {
+	color: #d6666f;
+	text-shadow: 2px 1px 1px #4d4240;
+}
+
+#header {
+	/* created ID to allow link to call to this spot */
+}
+
+nav {
+	margin: auto;
+}
+
+#nav a{
+	margin: 5px;
+	font-family: Baskerville, serif;
+}
+
+a {
+	text-decoration: none;
+	color: #4d4240;
+	font-family: Baskerville, serif;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #007978;
+}
+
+a.active {
+	color: rgb(214,102,111);
+}
+
+main {
+	margin: 40px 100px;
+	padding: 20px 0;
+	background-color: #7b8689;
+	box-shadow: 0 0 5px 2px #4d4240;
+}
+
+main img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	margin: 15px;
+	padding: 5px;
+	background-color: #4d4240;
+}
+
+main img:hover {
+	background-color: #d6666f;
+}
+
+#link {
+	width: 450px;
+	height: auto;
+	background-color: #4d4240;
+	margin: 15px auto;
+	padding: 20px 5px;
+}
+
+#link h2 {
+	margin: auto;
+	color: #dde5e1;
+}
+
+#link a {
+	color: #dde5e1;
+	font-family: 'Sansita', cursive;
+}
+
+#link a:hover {
+	color: #d6666f;
+}
+
+/* Immersion Specific IDs */
+
+#instaLogo {
+	margin: 15px;
+	width: 450px;
+	height: 450px;
+	display: inline-block;
+	border: 5px solid #4d4240;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/immersion/immersion006.png');
+}
+
+#instaLogo:hover {
+	border: 5px solid #d6666f;
+	background-image: url('../media/immersion/instaLogo.png')
+}
+
+#snapchatFilter {
+	margin: 15px;
+	width: 450px;
+	height: 687px;
+	display: inline-block;
+	border: 5px solid #4d4240;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/immersion/immersion005.png');
+}
+
+#snapchatFilter:hover {
+	border: 5px solid #d6666f;
+	background-image: url('../media/immersion/snapchatFilter.png')
+}
+
+/* CuddlePants Specific IDs */
+
+#intro {
+	min-width: 450px;
+	max-width: 80%;
+	height: auto;
+	background-color: #4d4240;
+	margin: 15px auto;
+	padding: 20px 35px;
+}
+
+#intro h2 {
+	color: #dde5e1;
+}
+
+#intro p {
+	color: #dde5e1;
+	font-family: Helvetica, sans-serif;
+}
+
+video {
+	width: 90% !important;
+	height: auto !important;
+}
+
+/* UPB Specific IDs */
+
+#eDay3 {
+	margin: 15px;
+	width: 450px;
+	height: 582px;
+	display: inline-block;
+	border: 5px solid #4d4240;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/UPB/earthDay003.png');
+}
+
+#eDay3:hover {
+	border: 5px solid #d6666f;
+	background-image: url('../media/UPB/earthDay003Hover.png')
+}
+
+#hB1 {
+	margin: 15px;
+	width: 450px;
+	height: 291px;
+	display: inline-block;
+	border: 5px solid #4d4240;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/UPB/hungerBanquet001.png');
+}
+
+#hB1:hover {
+	border: 5px solid #d6666f;
+	background-image: url('../media/UPB/hungerBanquet001Hover.png')
+}
+
+#hB2 {
+	margin: 15px;
+	width: 450px;
+	height: 291px;
+	display: inline-block;
+	border: 5px solid #4d4240;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/UPB/hungerBanquet002.png');
+}
+
+#hB2:hover {
+	border: 5px solid #d6666f;
+	background-image: url('../media/UPB/hungerBanquet002Hover.png')
+}
+
+#sMag {
+	margin: 15px;
+	width: 450px;
+	height: 450px;
+	display: inline-block;
+	border: 5px solid #4d4240;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/UPB/scheduleMagnet.png');
+}
+
+#sMag:hover {
+	border: 5px solid #d6666f;
+	background-image: url('../media/UPB/scheduleMagnetHover.png')
+}
+
+#twloha {
+	margin: 15px;
+	width: 450px;
+	height: 582px;
+	display: inline-block;
+	border: 5px solid #4d4240;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/UPB/twloha001.png');
+}
+
+#twloha:hover {
+	border: 5px solid #d6666f;
+	background-image: url('../media/UPB/twloha001Hover.png')
+}
+
+/* Gallery Specific IDs */
+
+#gallery {
+	margin: 40px 25px 45px;
+}
+
+#galleryTag{
+	margin: 0 auto 45px;
+	padding: auto auto 45px;
+}

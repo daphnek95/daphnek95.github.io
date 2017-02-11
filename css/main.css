@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+COLOR SCHEME:
+	#dde5e1 OR rgb(221,229,225)
+	#a5b3af OR rgb(165,179,175)
+	#7b8689 OR rgb(123,134,137)
+	#4d4240 OR rgb(77,66,64)
+	#007978 OR rgb(0,121,120)
+
+IMPORTANT ACCENT COLOR:
+	#d6666f OR rgb(214,102,111)
+*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #dde5e1;
+	overflow-x: hidden;
+	text-align: center;
+	font-family: 'Sansita', cursive;
+}
+
+header {
+	margin: 0;
+	padding: 10px;
+	min-height: 72px;
+	width: 100%;
+	background: url('../media/siteBanner.png');
+}
+
+
+nav {
+	margin: 150px auto;
+	width: 40%;
+	float: left;
+}
+
+#nav {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav a{
+	margin: 5px;
+	line-height: 35px;
+}
+
+a {
+	text-decoration: none;
+	color: #4d4240;
+	font-family: Baskerville, serif;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #007978;
+}
+
+a.active {
+	color: rgb(214,102,111);
+}
+
+main {
+	width: 60%;
+	float: left;
+}
+
+#boxlimits {
+	margin: 40px auto;
+	border: 6px solid #4d4240;
+	width: 90%;
+	height: 650px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #7b8689;
+}
+
+img {
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* self-portrait */
+.roundedborder {
+	margin: auto;
+	padding: 4px;
+	background-color: rgba(0,121,120,0.75);
+	border: 6px solid #4d4240;
+	border-radius: 50%;
+}
+
+.roundedborder:hover {
+	background-color: rgba(214,102,111,0.5);
+}
+
+/* HOME PAGE USE ONLY */
+
+#openingBanner {
+	background: #7b8689 50% 0 repeat fixed;
+	background-size: cover;
+	min-height: 900px;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	box-shadow: 0 2px 5px 1px rgba(77,66,64,0.5);
+	background-position: coords;
+     -webkit-background-size: 'cover';
+     -moz-background-size: 'cover';
+     -o-background-size: 'cover';
+}
+
+#openingBanner img {
+	width: 100%;
+	height: auto;
+	margin: 220px auto;
+}
+
+#homeNav {
+	margin: 150px auto;
+	width: 100%;
+	float: none;
+}
+
+/* PROJECTS PAGE USE ONLY -- IDs for specific banners */
+
+.projectsBanner {
+	width: 100%;
+	background-color: rgba(214,102,111,0.75);
+	color: #a5b3af;
+	padding: 25px;
+}
+
+.projectsBanner a {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#kraftDogs,#paperPlanes,#immersionArcade,#windyCity,#cuddlePants,#raiderPortraits,#aieshaPortraits,#makaylaPortraits,#alisonPortraits {
+	background-position: coords;
+     -webkit-background-size: 'cover';
+     -moz-background-size: 'cover';
+     -o-background-size: 'cover';
+     background-size: 'cover';
+}
+
+#kraftDogs {
+	margin: 20px auto 0;
+	padding: 40px;
+	background-image: url('../media/kraftDogsBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#paperPlanes {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/paperPlanesBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#immersionArcade {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/immersionArcadeBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#windyCity {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/windyCityBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#cuddlePants {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/cuddlePantsBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#upb {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/upbBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#raiderPortraits {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/raiderBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#aieshaPortraits {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/aieshaBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#makaylaPortraits {
+	margin: 8px auto 0;
+	padding: 40px;
+	background-image: url('../media/makaylaBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+#alisonPortraits {
+	margin: 8px auto 25px;
+	padding: 40px;
+	background-image: url('../media/alisonBanner.png');
+	background-repeat: none;
+	width:80%;
+	height: auto;
+}
+
+.proBox {
+	background-color: rgba(214,102,111,.85);
+	padding: 15px;
+	line-height: 8px;
+}
+
+.proBox h2 {
+	font-family: 'Sansita', sans-serif;
+	font-weight: 700;
+	color: #4d4240;
+	text-shadow: 1px 1px 1px rgba(221,229,225,0.25);
+}
+
+.proBox a {
+	color: #000;
+	font-family: 'Sansita', cursive;
+}
+
+.proBox a:hover {
+	color: #dde5e1;
+}
+
+/* ABOUT PAGE SPECIFIC */
+
+#aboutBox{
+	text-align: center;
+	margin: 40px 25px 45px;
+}
+
+#aboutBox h1 {
+	color: #007879;
+	text-shadow: 1px 1px 1px #4d4240;
+}
+
+#aboutBox h2 {
+	color: #dde3e1;
+}
+
+#aboutBox h3,#aboutBox h4,#aboutBox p {
+	color: #4d4240;
+}
+
+.links {
+	font-family: 'Sansita', cursive;
+	font-size: 32px;
+	color: #dde3e1;
+}
+
+.float {
+	float: center;
+	display: inline-block;
+	margin: 8px auto;
+	width: 40%;
+	vertical-align: middle;
+}
+
+#instagram {
+	margin: 15px 10px;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/socialHandles/instagramLogo.svg');
+	background-size: 100%;
+}
+
+#instagram:hover {
+	background-image: url('../media/socialHandles/instagramLogoHover.svg')
+}
+
+#facebook {
+	margin: 15px 10px;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/socialHandles/facebookLogo.svg');
+	background-size: 100%;
+}
+
+#facebook:hover {
+	background-image: url('../media/socialHandles/facebookLogoHover.svg')
+}
+
+#resume {
+	margin: 15px 10px;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url('../media/socialHandles/resume.svg');
+	background-size: 100%;
+}
+
+#resume:hover {
+	background-image: url('../media/socialHandles/resumeHover.svg')
+}
+
