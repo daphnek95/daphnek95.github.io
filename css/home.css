@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*COLOR SCHEME:
+	#dde5e1 OR rgb(221,229,225)
+	#a9b8b3 OR rgb(169,184,179)
+	#7b8689 OR rgb(123,134,137)
+	#4d4240 OR rgb(77,66,64)
+	#007978 OR rgb(0,121,120)
+
+	IMPORTANT ACCENT COLOR:
+		#d6666f OR rgb(214,102,111)*/
+
+body {
+	background: #dde3e1;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header img {
+	margin: 80px auto 180px;
+}
+
+#logoSVG {
+	width: 45%;
+}
+
+#homeTextSVG{
+	width: 90%;
+	margin: 180px auto auto;
+}
+
+.imageSlider img {
+	width: 100%;
+	height: auto;
+}
+
+.imageSlider {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* self-portrait */
+.roundedborder {
+	margin: auto;
+	padding: 4px;
+	background-color: rgba(0,121,120,0.75);
+	border: 6px solid #4d4240;
+	border-radius: 50%;
+}
+
+.roundedborder:hover {
+	background-color: rgba(214,102,111,0.5);
+}
+
+footer {
+	margin: 100px auto;
+}
+
+#nav a{
+	margin: 5px;
+	line-height: 35px;
+}
+
+a {
+	text-decoration: none;
+	color: #4d4240;
+	font-family: Baskerville, serif;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #007978;
+}
+
+a.active {
+	color: rgb(214,102,111);
+}
