@@ -2,94 +2,74 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Daphnelizabeth Studio</title>
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<title>Daphne Elizabeth Studio</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Sansita:400,700" rel="stylesheet">
+	<!-- Slick Slider jQuery Plugin kenwheeler.github.io/slick -->
+	<link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  			$('.imageSlider').slick({
+    			infinite: true,
+  				slidesToShow: 3,
+  				slidesToScroll: 3,
+				autoplay: true,
+				autoplaySpeed: 2500,
+				arrows: false,
+				dots: false
+  			});
+		});
+	</script>
 </head>
 
 <body>
 	<header>
-		<img src="../media/nameBanner.png"/>
+		<!-- IMG Slider Banner; FULL WIDTH OF THE SCREEN (slick) -->
+		<div class="imageSlider">
+			<div><img src="../media/slick/alison001.png"></div>
+			<div><img src="../media/slick/meeker001.png"></div>
+			<div><img src="../media/slick/aiesha001.png"></div>
+			<div><img src="../media/slick/makayla001.png"></div>
+			<div><img src="../media/slick/raider001.png"></div>
+			<div><img src="../media/slick/makayla003.png"></div>
+			<div><img src="../media/slick/raider003.png"></div>
+			<div><img src="../media/slick/alison003.png"></div>
+			<div><img src="../media/slick/meeker003.png"></div>
+			<div><img src="../media/slick/aiesha003.png"></div>
+			<div><img src="../media/slick/meeker002.png"></div>
+			<div><img src="../media/slick/raider002.png"></div>
+			<div><img src="../media/slick/aiesha002.png"></div>
+			<div><img src="../media/slick/makayla002.png"></div>
+			<div><img src="../media/slick/alison002.png"></div>
+		</div>
 	</header>
 	<nav>
-<!--image fit in a circle with nav under image; keep it to the left hand side (the right side is for the scrollable div)-->
-		<div>
-			<img class="roundedborder" src="../media/profilePic.png"/>
-			<div id="nav">
-				<p>
-					<a href="../index.html">home</a>
-					<a class="active" href="index.html">projects</a>
-					<a href="../gallery/index.html">gallery</a>
-					<a href="https://www.etsy.com/shop/DaphnelizabethStudio" target="_blank">shop</a>
-					<a href="../about/index.html">about</a>
-				</p>
-			</div>
+		<img class="roundedborder" src="../media/profilePic.png"/>
+		<div id="nav">
+			<p>
+				<a href="../index.html">home</a>
+				<a class="active" href="index.html">projects</a>
+				<a href="../gallery/index.html">gallery</a>
+				<a href="https://www.etsy.com/shop/DaphnelizabethStudio" target="_blank">shop</a>
+				<a href="../about/index.html">about</a>
+			</p>
 		</div>
 	</nav>
-	<main>
-<!--you'll have to create multiple IDs that will allow you to have a background image of the project you're working on; all that will be within the div in HTML will be the project name and then the ability to view the gallery.-->
-		<div id="boxlimits">
-			<div id="kraftDogs">
-				<div class="proBox">
-					<h2>Kraft Dogs</h2>
-					<p><a href="gallery/kraft-dogs.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="paperPlanes">
-				<div class="proBox">
-					<h2>Paper Planes</h2>
-					<p><a href="gallery/paper-planes.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="immersionArcade">
-				<div class="proBox">
-					<h2>Immersion Arcade</h2>
-					<p><a href="gallery/immersion-arcade.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="windyCity">
-				<div class="proBox">
-					<h2>Windy City Wieners</h2>
-					<p><a href="gallery/windy-city-wieners.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="cuddlePants">
-				<div class="proBox">
-					<h2>CuddlePants</h2>
-					<p><a href="gallery/cuddlepants.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="upb">
-				<div class="proBox">
-					<h2>University Program Board</h2>
-					<p><a href="gallery/university-program-board.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="raiderPortraits">
-				<div class="proBox">
-					<h2>Raider Portraits</h2>
-					<p><a href="gallery/raider-portraits.html">ViewGallery</a></p>
-				</div>
-			</div>
-			<div id="aieshaPortraits">
-				<div class="proBox">
-					<h2>Aiesha Portraits</h2>
-					<p><a href="gallery/aiesha-portraits.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="makaylaPortraits">
-				<div class="proBox">
-					<h2>Makayla Portraits</h2>
-					<p><a href="gallery/makayla-portraits.html">View Gallery</a></p>
-				</div>
-			</div>
-			<div id="alisonPortraits">
-				<div class="proBox">
-					<h2>Alison Portraits</h2>
-					<p><a href="gallery/alison-portraits.html">View Gallery</a></p>
-				</div>
-			</div>
-		</div>
+	<main id="main">
+		<a href="gallery/kraft-dogs.html"><img class="proIMG" src="../media/projects/kraftDogs.png"/></a>
+		<a href="gallery/paper-planes.html"><img class="proIMG" src="../media/projects/paperPlanes.png"/></a>
+		<a href="gallery/immersion-arcade.html"><img class="proIMG" src="../media/projects/immersionArcade.png"/></a>
+		<a href="gallery/windy-city-wieners.html"><img class="proIMG" src="../media/projects/windyCity.png"/></a>
+		<a href="gallery/cuddlepants.html"><img class="proIMG" src="../media/projects/cuddlePants.png"/></a>
+		<a href="gallery/university-program-board.html"><img class="proIMG" src="../media/projects/upb.png"/></a>
+		<a href="gallery/raider-portraits.html"><img class="proIMG" src="../media/projects/raiderPortraits.png"/></a>
+		<a href="gallery/aiesha-portraits.html"><img class="proIMG" src="../media/projects/aieshaPortraits.png"/></a>
+		<a href="gallery/meeker-portraits.html"><img class="proIMG" src="../media/projects/meekerPortraits.png"/></a>
+		<a href="gallery/makayla-portraits.html"><img class="proIMG" src="../media/projects/makalyaPortraits.png"/></a>
+		<a href="gallery/alison-portraits.html"><img class="proIMG" src="../media/projects/alisonPortraits.png"/></a>
 	</main>
 </body>
 </html>
