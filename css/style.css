@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+COLOR SCHEME:
+	#dde5e1 OR rgb(221,229,225)
+	#a9b8b3 OR rgb(169,184,179)
+	#7b8689 OR rgb(123,134,137)
+	#4d4240 OR rgb(77,66,64)
+	#007978 OR rgb(0,121,120)
+	#856d17 OR rgb(133,109,23)
+
+IMPORTANT ACCENT COLOR:
+	#d6666f OR rgb(214,102,111)
+*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #dde5e1;
+	text-align: center;
+	font-family: 'Sansita', cursive;
+}
+
+.imageSlider img {
+	width: 100%;
+	height: auto;
+}
+
+.imageSlider {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav a{
+	margin: 5px;
+	line-height: 35px;
+}
+
+nav {
+	width: 30%;
+	margin: 250px auto;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	color: #4d4240;
+	font-family: Baskerville, serif;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #007978;
+}
+
+a.active {
+	color: rgb(214,102,111);
+}
+
+main {
+	margin: 225px auto 0;
+	padding: 25px;
+	width: 60%;
+	height: 350px;
+	overflow-y: scroll;
+	text-align: left;
+	border-left: 2px solid #007879;
+	float: left;
+	display: inline-block;
+	cursor: ns-resize;
+	color: #4d4240;
+}
+
+main img {
+	width: 20%;
+	height: auto;
+	padding: 0 15px;
+}
+
+/* self-portrait */
+.roundedborder {
+	margin: auto;
+	padding: 4px;
+	background-color: rgba(0,121,120,0.75);
+	border: 6px solid #4d4240;
+	border-radius: 50%;
+}
+
+.roundedborder:hover {
+	background-color: rgba(214,102,111,0.5);
+}
+
+/* Projects Page Only */
+#main {
+	margin: 225px auto 150px;
+	padding: 25px;
+	height: 600px;
+	text-align: left;
+	border-left: 2px solid #007879;
+	float: left;
+	display: inline-block;
+	cursor: ns-resize;
+	color: #4d4240;
+}
+
+.proIMG {
+	width: 100%;
+	height: auto;
+	margin: 25px 5px 25px auto;
+}
