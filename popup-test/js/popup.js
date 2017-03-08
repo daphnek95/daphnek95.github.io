@@ -4,7 +4,6 @@ var productOverlay = $('.product-image-overlay');
 var productOverlayImage = $('.product-image-overlay .diamondPic');
 
 productImage.click(function () {
-	"use strict";
     var productImageSource = $(this).attr('src');
 
     productOverlayImage.attr('src', productImageSource);
