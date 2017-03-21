@@ -2,7 +2,25 @@
 /* CSS Document */
 
 body {
-	margin: 20px;
+	margin: 40px;
+	margin-top: 0;
 	background: #4d4240;
 	color: #aab5b8;
+}
+
+h1,h3 {
+	margin: 80px;
+}
+
+h1 {
+	margin-top: 40px;
+}
+
+main {
+	background: #aab5b8;
+	color: #4d4240;
+	padding: 10px 20px;
+	font-weight: 600;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
 }
