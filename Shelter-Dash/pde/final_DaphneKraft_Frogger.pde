@@ -399,7 +399,6 @@ void draw(){
 }
 
 void keyPressed() {
-  println("key pressed="+keyCode);
   switch(keyCode){
     case 37: //left
       playerx=playerx-30;
