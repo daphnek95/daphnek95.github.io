@@ -3,18 +3,21 @@
 
 body{
 	background: #38292A;
+	text-align: center;
 }
 
 h1{
 	font-size: 72px;
 	margin: 15px 0 0 15px;
 	color: #D4D4D4;
+	text-align: left;
 }
 
 p{
 	font-size: 20px;
 	margin: 0 0 15px 15px;
 	color: #F4F3B4;
+	text-align: left;
 }
 
 canvas{
