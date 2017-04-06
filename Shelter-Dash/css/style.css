@@ -21,5 +21,9 @@ p{
 }
 
 canvas{
-	border: 2px solid #fff;
+	width: 80%;
+	height: auto;
+	border: 4px solid #fff;
+	margin-top: 2em;
+	margin-bottom: 6em;
 }
