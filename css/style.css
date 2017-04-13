@@ -1,117 +1,117 @@
 @charset "UTF-8";
-/* CSS Document */
+/* Mobile Layout - DEFAULT */
 
-/*
-COLOR SCHEME:
+/* COLOR SCHEME
 	#dde5e1 OR rgb(221,229,225)
 	#a9b8b3 OR rgb(169,184,179)
 	#7b8689 OR rgb(123,134,137)
 	#4d4240 OR rgb(77,66,64)
 	#007978 OR rgb(0,121,120)
-	#856d17 OR rgb(133,109,23)
 
-IMPORTANT ACCENT COLOR:
-	#d6666f OR rgb(214,102,111)
-*/
-body {
+	IMPORTANT ACCENT COLOR:
+		#d6666f OR rgb(214,102,111)*/
+
+body{
+	background-color: #dde3e1;
 	margin: 0;
 	padding: 0;
-	background-color: #dde5e1;
 	text-align: center;
-	font-family: 'Sansita', cursive;
+	color: #4d4240;
 }
 
-.imageSlider img {
+#entrance{
 	width: 100%;
-	height: auto;
 }
 
-.imageSlider {
-	width: 100%;
-	margin: 0;
-	padding: 0;
+#entrance a{
+	font-size: 16px;
+}
+
+#entrance a:hover{
+	color: #d6666f;
+	font-size: 16px;
+}
+
+#entrance img{
+	width: 20em;
+	margin: 7em auto 0;
 }
 
 #nav {
+	margin: auto;
+	width: 88%;
+	padding: 0 auto;
+	border-bottom: .3em solid #007879;
+	border-radius: 1em;
+}
+
+#nav a {
+	line-height: 2em;
+	display: inline-block;
+	margin: auto .15em;
+	padding: 0;
+	text-decoration: none;
+	color: #4d4240;
+}
+
+#scrollContent {
+	width: 90%;
+	margin: 2em auto;
+	padding: 0;
+}
+
+article {
+	margin: .5em auto 0;
+}
+
+video {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#nav a{
-	margin: 5px;
-	line-height: 35px;
-}
-
-nav {
-	width: 30%;
-	margin: 250px auto;
-	float: left;
-}
-
 a {
+	color: #007879;
 	text-decoration: none;
-	color: #4d4240;
-	font-family: Baskerville, serif;
-	font-size: 22px;
-	font-weight: 600;
 }
 
 a:hover {
-	color: #007978;
-}
-
-a.active {
-	color: rgb(214,102,111);
-}
-
-main {
-	margin: 225px auto 0;
-	padding: 25px;
-	width: 60%;
-	height: 350px;
-	overflow-y: scroll;
-	text-align: left;
-	border-left: 2px solid #007879;
-	float: left;
-	display: inline-block;
-	cursor: ns-resize;
 	color: #4d4240;
 }
 
-main img {
-	width: 20%;
+.projectMainIMG {
+	width: 80%;
 	height: auto;
-	padding: 0 15px;
-}
-
-/* self-portrait */
-.roundedborder {
 	margin: auto;
-	padding: 4px;
-	background-color: rgba(0,121,120,0.75);
-	border: 6px solid #4d4240;
-	border-radius: 50%;
 }
 
-.roundedborder:hover {
-	background-color: rgba(214,102,111,0.5);
-}
-
-/* Projects Page Only */
-#main {
-	margin: 225px auto 150px;
-	padding: 25px;
-	height: 600px;
-	text-align: left;
-	border-left: 2px solid #007879;
-	float: left;
-	display: inline-block;
-	cursor: ns-resize;
-	color: #4d4240;
-}
-
-.proIMG {
-	width: 100%;
+.projectIMG {
+	width: 45%;
 	height: auto;
-	margin: 25px 5px 25px auto;
+	margin: 0;
+	padding: .4em .15em;
+	vertical-align: middle;
+}
+
+footer a {
+	text-decoration: none;
+	color: #007879;
+	font-size: 1.5em;
+}
+
+/* Phone Landscape -> Tablet Size */
+@media all and (min-width: 30em){
+	#entrance img {margin: 2em auto 0;}
+	#nav a {margin: auto .35em}
+}
+
+@media all and (min-width: 48em){
+	#entrance img {width: 30em; margin: 6em auto 0}
+	#nav a {margin: auto .6em}
+}
+
+@media all and (min-width: 64em){
+	#scrollContent {height: 52em; overflow-y: scroll; cursor: ns-resize;}
+	footer a {color: #dde3e1; cursor: default;}
+	.projectIMG {padding: 2em 1em}
+	article p {width: 75%; margin: auto auto .5em;}
 }
