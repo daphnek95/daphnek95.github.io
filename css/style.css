@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+/*==============================
+------------ COLORS ------------
+==============================*/
+
+.teal {color: #A9B8B3;}
+.teal-light {color: #DDE5E1;}
+.teal-desaturated {color: #7B8689;}
+.teal-bright {color: #007978;}
+.brown {color: #4D4240;}
+.coral {color: #D6666F;}
+
+/*--- backgrounds ---*/
+
+.tealBG {background-color: #A9B8B3;}
+.teal-lightBG {background-color: #DDE5E1;}
+.teal-desaturatedBG {background-color: #7B8689;}
+.teal-brightBG {background-color: #007978;}
+.brownBG {background-color: #4D4240;}
+.coralBG {background-color: #D6666F;}
+
+/*=============================
+------------ ICONS ------------
+=============================*/
+
+.fa-chevron-right {
+  padding-left: .35em;
+  vertical-align: middle;
+}
+
+.fa-graduation-cap::before {
+  padding-right: .54em;
+}
+
+.fa-chevron-down {
+  border-radius: 50%;
+  padding: .54em;
+  position: relative;
+  z-index: 300;
+  zoom: 1;
+}
+
+.icon-facebook-square,
+.icon-instagram {
+  font-size: 2em;
+}
+
+.fa-facebook-square {
+  padding-right: .27em;
+}
+
+.fa-instagram {
+  padding-left: .27em;
+}
+
+.fa-facebook-square:hover,
+.fa-instagram:hover {
+  color: #D6666F;
+}
+
+/*==================================
+------------ TYPOGRAPHY ------------
+==================================*/
+
+h1,
+h2,
+h3 {
+  font-family: 'Comfortaa', cursive;
+  color: #4D4240;
+}
+
+p {
+  font-family: Helvetica;
+}
+
+a {
+  color: #007978;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#home-content h1 {
+	font-size: 1.85em;
+	margin-bottom: 0;
+}
+
+#gallery-content,
+#sketchbook-content,
+#info-section h2,
+#gallery-home-title h1,
+#sketchbook-home-title h1 {
+	text-align: center;
+}
+
+#info-deck h2 {
+	margin-top: 1.54em;
+}
+
+.gallery-home-description p,
+.sketchbook-home-description {
+  margin-bottom: 0;
+}
+
+.info-card-content h3 {
+  line-height: 1.25em;
+  margin-bottom: .2em;
+}
+
+.info-card-content p {
+  line-height: 1.45em;
+  margin-top: 0;
+}
+
+/*================================
+------------ STANDARD ------------
+------------ LAYOUTS -------------
+================================*/
+
+body {
+  background-color: #007978;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li .fa-circle {
+	font-size: .54em;
+	padding: 0 .54em;
+}
+
+li p {
+	font-size: 1.1em;
+}
+
+.visually-hidden {
+  position:absolute;
+  left:-100000000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/*--- homepage ---*/
+
+#home-section,
+#footer-section,
+#gallery-home,
+#gallery-home-footer,
+#sketchbook-home,
+#sketchbook-home-footer {
+  background-color: #007978;
+}
+
+#gallery-section,
+#info-section {
+  background-color: #A9B8B3;
+}
+
+#sketchbook-section,
+#gallery-home-content,
+#sketchbook-home-content {
+  background-color: #DDE5E1;
+}
+
+#gallery-content,
+#sketchbook-content,
+#info-section,
+#footer-section,
+#gallery-home-title,
+#sketchbook-home-title {
+  padding: 1.54em 0;
+}
+
+#home-deck {
+  padding: 2em 0 2.5em;
+}
+
+#home-card {
+  background-color: #DDE5E1;
+  box-shadow: rgba(0,0,0,0.75) 0 0 20px;
+  margin: 0 auto;
+  padding: 1em 1.54em;
+  text-align: center;
+  width: 80%;
+}
+
+#home-card img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+#home-content {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#gallery-content,
+#sketchbook-content {
+  margin: 0 1.54em;
+}
+
+#info-card {
+	text-align: center;
+	margin-bottom: 1.54em;
+}
+
+#info-card img {
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	width: 40%;
+}
+
+#info-card-content {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	width: 85%;
+}
+
+#footer-content,
+#gallery-footer-content,
+#sketchbook-footer-content {
+	margin-top: 2em;
+}
+
+#footer-content ul,
+#gallery-footer-content ul,
+#sketchbook-footer-content ul {
+	text-align: center;
+  padding-bottom: .54em;
+}
+
+#footer-content #back-to-top,
+#gallery-footer-content #back-to-top,
+#sketchbook-footer-content #back-to-top {
+	text-align: right;
+	margin-right: 1em;
+}
+
+.scroll-down-arrow {
+  color: #4D4240;
+  font-size: 1.2em;
+  margin: -20px 0;
+  text-align: center;
+}
+
+/*-------- GALLERY & SKETCHBOOK PAGE --------*/
+
+.gallery-home-project,
+.sketchbook-home-project {
+  margin: 0 auto;
+  padding-top: 2.54em;
+  padding-bottom: 2em;
+  width: 90%;
+}
+
+.gallery-main-image img,
+.sketchbook-main-image img {
+  height: auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+.gallery-small-image,
+.sketchbook-small-image {
+  text-align: center;
+}
+
+.gallery-small-image img,
+.sketchbook-small-image img {
+  .border-radius: 50%;
+  margin-top: .5em;
+  max-width: 960px;
+  width: 30%;
+}
+
+.gallery-main-image img,
+.gallery-small-image img,
+.sketchbook-main-image img,
+.sketchbook-small-image img {
+  transition: filter .75s;
+}
+
+.gallery-main-image img:hover,
+.gallery-small-image img:hover,
+.sketchbook-main-image img:hover,
+.sketchbook-small-image img:hover {
+  -webkit-filter: grayscale(100%) blur(1px);
+  filter: grayscale(100%) blur(1px);
+  transition: filter 1.25s;
+}
+
+.middle-image {
+  margin: 0 .75em;
+}
+
+/*================================
+------------- MEDIA --------------
+------------ QUERIES -------------
+================================*/
+
+@media all and (min-width: 600px) {
+  /*--- homepage ---*/
+  #home-card {
+    text-align: left;
+  }
+  #home-card img {
+    width: 40%;
+  }
+  #home-content {
+    margin: 0 0 0 .54em;
+  }
+  #info-card img {
+    margin: 0 auto .54em;
+    width: 35%;
+  }
+}
+
+@media all and (min-width: 766px) {
+  /*--- homepage ---*/
+  #home-card img {
+    width: 50%;
+  }
+  #home-content {
+    margin: 0 0 0 1.54em;
+  }
+  #gallery-content,
+  #sketchbook-content,
+  #gallery-home-title,
+  #sketchbook-home-title {
+    margin: 0 3.54em;
+  }
+  #info-card img {
+    width: 25%;
+  }
+  #info-card-content {
+    margin-left: 2.54em;
+    width: 50%;
+  }
+  #footer-content #back-to-top,
+  #gallery-footer-content #back-to-top,
+  #sketchbook-footer-content #back-to-top {
+    margin-right: 1.54em;
+  }
+  .scroll-down-arrow {
+    font-size: 1.45em;
+    margin: -24px 0;
+  }
+  /*--- gallery & sketchbook page ---*/
+  .gallery-home-image,
+  .sketchbook-home-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .middle-image {
+    margin: 0 .75em;
+  }
+  .gallery-home-description,
+  .sketchbook-home-description {
+    display: inline-block;
+    margin-left: 1.54em;
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 930px) {
+  /*--- homepage ---*/
+  li p {
+    font-size: 1.25em;
+  }
+  #home-content {
+    margin: 0 0 0 2em;
+  }
+  #home-content h1,
+  #gallery-home-title h1,
+  #sketchbook-home-title h1 {
+    font-size: 2.25em;
+  }
+  #gallery-content,
+  #sketchbook-content,
+  #gallery-home-title,
+  #sketchbook-home-title {
+    margin: 0 5.75em;
+  }
+  /*--- gallery & sketchbook page ---*/
+  .gallery-home-description,
+  .sketchbook-home-description {
+    margin-left: 2.35em;
+  }
+  .middle-image {
+    margin: 0 1em;
+  }
+}
+
+@media all and (min-width: 1034px) {
+  /*--- homepage ---*/
+  #home-content {
+    margin: 0 0 0 2.54em;
+  }
+  #gallery-content,
+  #sketchbook-content,
+  #gallery-home-title,
+  #sketchbook-home-title {
+    margin: 0 8em;
+  }
+  /*--- gallery & sketchbook page ---*/
+  .gallery-home-description,
+  .sketchbook-home-description {
+    margin-left: 2.54em;
+  }
+}
+
+@media all and (min-width: 1130px) {
+  /*--- gallery & sketchbook page ---*/
+  .middle-image {
+    margin: 0 1.25em;
+  }
+}

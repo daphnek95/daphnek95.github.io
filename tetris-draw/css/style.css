@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin-top: 6em;
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header,nav{
+	text-align: center;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 4em;
+	padding-right: 0;
+}

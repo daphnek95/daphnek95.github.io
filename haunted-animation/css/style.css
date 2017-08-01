@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background: url("../media/haunted.jpg") repeat;
+	margin-top: 6em;
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+}
