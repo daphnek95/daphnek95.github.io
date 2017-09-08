@@ -13,97 +13,118 @@
 <body>
   <section id="home-section">
     <div id="home-deck">
-      <div id="home-card">
-        <img src="svg/logoNOWORDS.svg" alt="Daphne Elizabeth Studio" />
-        <div id="home-content">
-          <h1>Daphne Elizabeth</h1>
-          <nav>
-            <ul>
-			        <li><p><a href="gallery/index.html" class="coral">Gallery</a></p></li>
-              <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
-			        <li><p><a href="sketchbook/index.html" class="coral">Sketchbook</a></p></li>
-              <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
-			        <li><p><a href="#info-section" class="coral">Info</a></p></li>
-            </ul>
-          </nav>
-          <p>In a hurry? <a href="media/pdfs/webResume.pdf" target="_blank"  class="coral">View my resume<i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
-        </div>
+      <div id="home-content">
+        <h1 class="teal-light"><img src="svg/logoNOWORDS.svg" alt="Daphne Elizabeth Studio"/>Daphne Elizabeth</h1>
+        <nav>
+          <img src="svg/computer.svg" alt="Computer screen with a design progam loaded"/>
+          <ul>
+            <li><p><a href="media/pdfs/webResume.pdf" target="_blank" class="teal-light">Resume</a></p></li>
+            <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+		        <li><p><a href="gallery/index.html" class="teal-light">Gallery</a></p></li>
+            <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+		        <li><p><a href="sketchbook/index.html" class="teal-light">Sketchbook</a></p></li>
+            <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+		        <li><p><a href="#info-section" class="teal-light">Info</a></p></li>
+            <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+            <li><p><a href="#contact-section" class="teal-light">Contact</a></p></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </section>
-  <div class="scroll-down-arrow">
-    <i class="fa fa-chevron-down teal-brightBG teal-light" aria-hidden="true"></i>
-  </div>
   <section id="gallery-section">
     <div class="svg-banner">
-      <img src="svg/homepage-gallery-banner.svg" alt="A computer running coding software." style="width:100%; height:auto;" />
+      <!-- <img src="svg/homepage-gallery-banner.svg" alt="A computer running coding software." style="width:100%; height:auto;" /> -->
     </div>
     <div id="gallery-content">
       <h2>My Gallery</h2>
       <p>Included in my gallery is a selection of projects I have done in school or from other jobs.</p>
-      <p><a href="gallery/index.html">View my gallery<i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+      <a href="gallery/index.html"><button>View my gallery</button></a>
     </div>
   </section>
-  <div class="scroll-down-arrow">
-    <i class="fa fa-chevron-down tealBG" aria-hidden="true"></i>
-  </div>
   <section id="sketchbook-section">
     <div class="svg-banner">
-      <img src="svg/homepage-sketchbook-banner.svg" alt="A computer running Adobe Photoshop." style="width:100%; height:auto;" />
+      <!-- <img src="svg/homepage-sketchbook-banner.svg" alt="A computer running Adobe Photoshop." style="width:100%; height:auto;" /> -->
     </div>
     <div id="sketchbook-content">
       <h2>My Sketchbook</h2>
       <p>Included in my sketchbook are a collection of freelance work and experimental pieces.</p>
-      <p><a href="sketchbook/index.html">View my sketchbook<i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+      <a href="sketchbook/index.html"><button>View my sketchbook</button></a>
     </div>
   </section>
-  <div class="scroll-down-arrow">
-    <i class="fa fa-chevron-down teal-lightBG" aria-hidden="true"></i>
-  </div>
   <section id="info-section">
     <div id="info-deck">
       <h2>My Information</h2>
       <div id="info-card">
         <img src="svg/aboutMeIMG.svg" alt="Daphne Elizabeth Studio" />
 	  	<div id="info-card-content">
-        <h3>My name is Daphne Kraft.
-          <br />I am passionate about front-end web development, graphic design, photography, and interactive technologies.
-        </h3>
+        <h3>My name is Daphne Kraft.</h3>
+        <h3>I am passionate about front-end web development, graphic design, photography, and interactive technologies.</h3>
         <p>Art is my deepest passion in life. The opportunity to learn new mediums of art and blend art with technology is something I love to do. Currently, I am studying Arts Technology at Illinois State University and am due to graduate May of 2018. Other than art, I love reading, traveling, Star Wars, Harry Potter, and all things Disney.</p>
-        <h3>Connect: </h3>
-        <p><ul>
-          <li>
-            <a href="https://www.facebook.com/daphnelizabethstudio/" target="_blank" class="icon-facebook-square">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </a>
-            <p class="visually-hidden">Facebook</p>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/daphnelizabeth.studio/" target="_blank" class="icon-instagram">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <p class="visually-hidden">Instagram</p>
-          </li>
-        </ul></p>
         <p><a href="media/pdfs/webResume.pdf" target="_blank">View my resume<i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
-        <p><a href="mailto:contact@daphnelizabeth.studio">Send an email<i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
 		</div>
       </div>
     </div>
   </section>
-  <div class="scroll-down-arrow">
-    <i class="fa fa-chevron-down tealBG" aria-hidden="true"></i>
-  </div>
+  <section id="contact-section">
+    <div id="contact-content">
+      <h2>Let's get connected!</h2>
+      <form method="post" action="php/index.php">
+        <label>Name</label>
+        <input name="name" placeholder="John Doe">
+
+        <label>Email</label>
+        <input name="email" type="email" placeholder="jdoe@samplemail.com">
+
+        <label>Subject</label>
+        <input name="subject" placeholder="Type here...">
+
+        <label>Message</label>
+        <textarea name="message" placeholder="Type here..."></textarea>
+
+        <br/>
+        <input id="submit" name="submit" type="submit" value="Send message">
+      </form>
+    </div>
+    <!-- <div id="social-media-content">
+      <h3>Find me on social media:</h3>
+      <p><ul>
+        <li>
+          <a href="https://www.facebook.com/daphnelizabethstudio/" target="_blank" class="icon-facebook-square">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+          <p class="visually-hidden">Facebook</p>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/daphnelizabeth.studio/" target="_blank" class="icon-instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <p class="visually-hidden">Instagram</p>
+        </li>
+      </ul></p>
+    </div> -->
+  </section>
   <section id="footer-section">
     <div id="footer-content">
-      <ul>
-	    <li><p><a href="gallery/index.html" class="teal-light">Gallery</a></p></li>
-	    <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
-	    <li><p><a href="sketchbook/index.html" class="teal-light">Sketchbook</a></p></li>
-	    <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
-	    <li><p><a href="#info-section" class="teal-light">Info</a></p></li>
-      </ul>
-	  <p id="back-to-top"><a href="#top" class="teal-light">Back to top<i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+      <footer>
+        <ul>
+          <li><p><a href="media/pdfs/webResume.pdf" target="_blank" class="teal-light">Resume</a></p></li>
+          <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+          <li><p><a href="gallery/index.html" class="teal-light">Gallery</a></p></li>
+          <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+          <li><p><a href="sketchbook/index.html" class="teal-light">Sketchbook</a></p></li>
+          <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+          <li><p><a href="#info-section" class="teal-light">Info</a></p></li>
+          <li><i class="fa fa-circle brown" aria-hidden="true"></i></li>
+          <li><p><a href="#contact-section" class="teal-light">Contact</a></p></li>
+        </ul>
+      </footer>
+      <div id="back-to-top">
+        <ul>
+          <li><a href="#top" class="teal-light"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </body>

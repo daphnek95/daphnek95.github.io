@@ -29,18 +29,6 @@
   vertical-align: middle;
 }
 
-.fa-graduation-cap::before {
-  padding-right: .54em;
-}
-
-.fa-chevron-down {
-  border-radius: 50%;
-  padding: .54em;
-  position: relative;
-  z-index: 300;
-  zoom: 1;
-}
-
 .icon-facebook-square,
 .icon-instagram {
   font-size: 2em;
@@ -93,7 +81,6 @@ a:hover {
 
 #home-content h1 {
 	font-size: 1.85em;
-	margin-bottom: 0;
 }
 
 #gallery-content,
@@ -161,6 +148,86 @@ li p {
   overflow:hidden;
 }
 
+button {
+  background-color: rgba(0,0,0,0);
+  border: 4px solid #d6666f;
+  border-radius: 1em;
+  color: #d6666f;
+  font-size: 1em;
+  height: 3.54em;
+  padding: 0 .75em;
+  width: auto;
+}
+
+button:hover {
+  background-color: #d6666f;
+  color: #dde5e1;
+}
+
+button:active {
+  background-color: #c05b63;
+  border-color: #c05b63;
+  color: #dde5e1;
+}
+
+/*--- form ---*/
+
+form {
+  font-family: Helvetica;
+  margin: 0 auto;
+  width: 50%;
+}
+
+label {
+  color: #007978;
+  display: block;
+  font-size: 1.15em;
+  margin-bottom: .54em;
+  margin-top: .75em;
+}
+
+input,
+textarea {
+  background-color: #f4f7f6;
+  border: 1px solid #a9b8b3;
+  border-radius: 1em;
+  font-size: 1em;
+  height: 3.54em;
+  padding-left: .54em;
+  resize: none;
+  width: 98%;
+  word-wrap: normal;
+}
+
+textarea {
+  height: 16em;
+  padding-top: .54em;
+}
+
+#submit {
+  background-color: rgba(0,0,0,0);
+  border: 4px solid #d6666f;
+  color: #d6666f;
+  cursor: pointer;
+  font-size: 1em;
+  height: 3.54em;
+  margin-top: 1.75em;
+  padding: 0 .75em;
+  text-align: center;
+  width: auto;
+}
+
+#submit:hover {
+  background-color: #d6666f;
+  color: #dde5e1;
+}
+
+#submit:active {
+  background-color: #c05b63;
+  border-color: #c05b63;
+  color: #dde5e1;
+}
+
 /*--- homepage ---*/
 
 #home-section,
@@ -178,6 +245,7 @@ li p {
 }
 
 #sketchbook-section,
+#contact-section,
 #gallery-home-content,
 #sketchbook-home-content {
   background-color: #DDE5E1;
@@ -185,6 +253,7 @@ li p {
 
 #gallery-content,
 #sketchbook-content,
+#contact-content,
 #info-section,
 #footer-section,
 #gallery-home-title,
@@ -193,28 +262,30 @@ li p {
 }
 
 #home-deck {
-  padding: 2em 0 2.5em;
-}
-
-#home-card {
-  background-color: #DDE5E1;
-  box-shadow: rgba(0,0,0,0.75) 0 0 20px;
-  margin: 0 auto;
-  padding: 1em 1.54em;
-  text-align: center;
-  width: 80%;
-}
-
-#home-card img {
-	width: 100%;
-	vertical-align: middle;
+  padding: 0 0 5.5em;
 }
 
 #home-content {
-  display: inline-block;
-  margin: 0;
+  margin: 0 auto;
   text-align: left;
   vertical-align: middle;
+}
+
+#home-content h1 img {
+  margin-left: .35em;
+  padding-right: .5em;
+  vertical-align: middle;
+  width: 2.54em;
+}
+
+nav {
+  text-align: center;
+}
+
+nav img {
+  height: auto;
+  max-width: 500px;
+  width: 100%;
 }
 
 #gallery-content,
@@ -242,15 +313,22 @@ li p {
 	width: 85%;
 }
 
+#contact-content {
+  display: block;
+  margin: 0 auto;
+}
+
+#contact-content h2 {
+  text-align: center;
+}
+
 #footer-content,
 #gallery-footer-content,
 #sketchbook-footer-content {
 	margin-top: 2em;
 }
 
-#footer-content ul,
-#gallery-footer-content ul,
-#sketchbook-footer-content ul {
+footer {
 	text-align: center;
   padding-bottom: .54em;
 }
@@ -262,11 +340,12 @@ li p {
 	margin-right: 1em;
 }
 
-.scroll-down-arrow {
-  color: #4D4240;
-  font-size: 1.2em;
-  margin: -20px 0;
+#back-to-top li {
   text-align: center;
+}
+
+#back-to-top li a i {
+  font-size: 2em;
 }
 
 /*-------- GALLERY & SKETCHBOOK PAGE --------*/
@@ -326,14 +405,9 @@ li p {
 
 @media all and (min-width: 600px) {
   /*--- homepage ---*/
-  #home-card {
-    text-align: left;
-  }
-  #home-card img {
-    width: 40%;
-  }
   #home-content {
-    margin: 0 0 0 .54em;
+    margin: 0 .54em;
+    text-align: left;
   }
   #info-card img {
     margin: 0 auto .54em;
@@ -343,12 +417,11 @@ li p {
 
 @media all and (min-width: 766px) {
   /*--- homepage ---*/
-  #home-card img {
-    width: 50%;
-  }
   #home-content {
-    margin: 0 0 0 1.54em;
+    margin: 0 1.54em;
   }
+  #home-content h1 img {margin-left: 0;}
+
   #gallery-content,
   #sketchbook-content,
   #gallery-home-title,
@@ -395,7 +468,7 @@ li p {
     font-size: 1.25em;
   }
   #home-content {
-    margin: 0 0 0 2em;
+    margin: 0 2em;
   }
   #home-content h1,
   #gallery-home-title h1,
@@ -421,7 +494,7 @@ li p {
 @media all and (min-width: 1034px) {
   /*--- homepage ---*/
   #home-content {
-    margin: 0 0 0 2.54em;
+    margin: 0 2.54em;
   }
   #gallery-content,
   #sketchbook-content,
