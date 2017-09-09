@@ -175,7 +175,23 @@ button:active {
 form {
   font-family: Helvetica;
   margin: 0 auto;
-  width: 50%;
+  width: 85%;
+}
+
+form div#form-social {
+  display: block;
+  margin-left: 0;
+}
+
+form h3 {
+  display: inline-block;
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+form ul {
+  display: inline-block;
+  margin-left: .54em;
 }
 
 label {
@@ -259,6 +275,10 @@ textarea {
 #gallery-home-title,
 #sketchbook-home-title {
   padding: 1.54em 0;
+}
+
+#home-section {
+  padding-left: 1.54em;
 }
 
 #home-deck {
@@ -402,6 +422,10 @@ footer {
 ------------- MEDIA --------------
 ------------ QUERIES -------------
 ================================*/
+@media all and (min-width: 520px) {
+  form div#form-social {display: inline-block;}
+  form h3 {margin-left: 2.25em;}
+}
 
 @media all and (min-width: 600px) {
   /*--- homepage ---*/
@@ -460,6 +484,8 @@ footer {
     margin-left: 1.54em;
     width: 45%;
   }
+  /*--- form --*/
+  form {width: 75%;}
 }
 
 @media all and (min-width: 930px) {
@@ -507,6 +533,8 @@ footer {
   .sketchbook-home-description {
     margin-left: 2.54em;
   }
+  /*--- form --*/
+  form {width: 60%;}
 }
 
 @media all and (min-width: 1130px) {
@@ -514,4 +542,9 @@ footer {
   .middle-image {
     margin: 0 1.25em;
   }
+}
+
+@media all and (min-width: 1220px) {
+  /*--- form ---*/
+  form {width: 50%;}
 }
