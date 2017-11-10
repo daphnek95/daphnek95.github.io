@@ -1,4 +1,5 @@
 var canvas;
+<<<<<<< HEAD
 var counter = 60;
 var ani = 0;
 var state = 0;
@@ -184,6 +185,13 @@ function setup() {
   otherExitY = 30;
   otherExitW = 115;
   otherExitH = 125;
+=======
+var bgIMG;
+
+function setup() {
+  canvas = createCanvas (2560, 1220);
+  bgIMG = loadImage("interactive-resume/images/castle.jpg");
+>>>>>>> origin/master
 
   //Moving canvas inside sketch div
   canvas.parent('interactive-resume-holder');
@@ -191,6 +199,7 @@ function setup() {
 
 function draw() {
   if (windowWidth < 600) {
+<<<<<<< HEAD
     counter = counter - 1;
     if(counter < 0) {
       ani = ani + 1;
@@ -538,6 +547,12 @@ function overTwoLArrow(twoLArrowX, twoLArrowY, twoLArrowW, twoLArrowH) {
     return true;
   } else {
     return false;
+=======
+    background(255);
+  } else {
+  background(0);
+  image(bgIMG,0,0);
+>>>>>>> origin/master
   }
 }
 
