@@ -1,323 +1,262 @@
 var canvas;
-var counter = 60;
+var counter = 65;
 var ani = 0;
 var state = 0;
-var x, y, w, h, d;
 
-// -- BOOLEANS -- //
-var overOptionExp = false;
-var overOneMenu = false;
-var overOneRArrow = false;
-var overTwoMenu = false;
-var overTwoLArrow = false;
-var overTwoRArrow = false;
-var overThreeMenu = false;
-var overThreeLArrow = false;
-var overOptionSkill = false;
-var overSkillsMenu = false;
-var overAdobeSkill = false;
-var overProgrammingSkill = false;
-var overMicrosoftSkill = false;
-var overOtherSkill = false;
-var overAdobeExit = false;
-var overProgrammingExit = false;
-var overMicrosoftExit = false;
-var overOtherExit = false;
-
-// -- VARIABLES FOR WINDOW WIDTH BELOW 600PX -- //
+// IMAGE VARIABLES //
 var mobileAni1;
 var mobileAni2;
 
-// -- IMAGES FOR WINDOW WIDTH ABOVE 600PX -- //
-var selectionMenu;
+var menuSelection;
 var experienceOne;
 var experienceTwo;
-var experienceThree;
-var skillsMenu;
-var skillsAdobe;
-var skillsProgramming;
-var skillsMicrosoft;
-var skillsOther;
+var menuSkills;
+var adobeSkills;
+var programmingSkills;
+var microsoftSkills;
+var otherSkills;
 
-// -- VARIABLES FOR BUTTON USE FOR WINDOW WIDTH ABOVE 600PX -- //
-
-//Selection Menu - Experience and Skills buttons
-var optionExpX; //experience option
-var optionSkillX; //skills option
-var optionButtonsY, optionButtosD; //Y coords and diameter for buttons
-var circleOverExp = false;
-var circleOverSkill = false;
-
-//Experience Slide One
-var oneMenuX, oneMenuY, oneMenuW, oneMenuH; //X and Y coords and width and height for menu
-var oneRArrowX, oneRArrowY, oneRArrowW, oneRArrowH; //X and Y coords and width and height for right arrow
-var rectOverOneMenu = false;
-var rectOverOneRArrow = false;
-
-//Experience Slide Two
-var twoMenuX, twoMenuY, twoMenuW, twoMenuH; //X and Y coords and the width and height for menu
-var twoLArrowX, twoLArrowY, twoLArrowW, twoLArrowH; //X and Y coords and the width and height for left arrow
-var twoRArrowX, twoRArrowY, twoRArrowW, twoRArrowH; //X and Y coords and the width and height for right arrow
-var rectOverTwoMenu = false;
-var rectOverTwoLArrow = false;
-var rectOverTwoRArrow = false;
-
-//Experience Slide Three
-var threeMenuX, threeMenuY, threeMenuW, threeMenuH; //X and Y coords and the width and height for menu
-var threeLArrowX, threeLArrowY, threeLArrowW, threeLArrowH; //X and Y coords and the width and height for left arrow
-var rectOverThreeMenu = false;
-var rectOverThreeLArrow = false;
-
-//Skills Selection Screen
-var skillsMenuX, skillsMenuY, skillsMenuW, skillsMenuH; //X and Y coords and the width and height of menu
-var skillsMAdobeX, skillsMProgrammingX, skillsMMicrosoftX, skillsMOtherX; //X coords of all skill buttons
-var skillButtonsY, skillButtonsD; //Y coords and diameter for the different skills options
-var rectOverSkillsMenu = false;
-var rectOverSkillsMAdobe = false;
-var rectOverSkillsMProgramming = false;
-var rectOverSkillsMMicrosoft = false;
-var rectOverSkillsMOther = false;
-
-//Adobe Skill
-var adobeExitX, adobeExitY, adobeExitW, adobeExitH; //X and Y coords and the width and height for exit
-var rectOverAdobeExit = false;
-
-//Programming Skill
-var programmingExitX, programmingExitY, programmingExitW, programmingExitH; //X and Y coords and the width and height for exit
-var rectOverProgrammingExit = false;
-
-//Microsoft Skill
-var microsoftExitX, microsoftExitY, microsoftExitW, microsoftExitH; //X and Y coords and the width and height for exit
-var rectOverMicrosoftExit = false;
-
-//Other Skill
-var otherExitX, otherExitY, otherExitW, otherExitH; //X and Y coords and the width and height for exit
-var rectOverOtherExit = false;
+// VARIABLES FOR BUTTONS ABOVE 600PX //
+// all buttons are ELLIPSES - NO RECT()
+var experienceOptionX, skillsOptionX, optionButtonsY, optionButtonsD;
+var menuOneX, menuOneY, menuOneD;
+var rArrowOneX, rArrowOneY, rArrowOneD;
+var menuTwoX, menuTwoY, menuTwoD;
+var lArrowTwoX, lArrowTwoY, lArrowTwoD;
+var menuSkillsX, menuSkillsY, menuSkillsD;
+var adobeSkillsX, adobeSkillsY, adobeSkillsD;
+var programmingSkillsX, programmingSkillsY, programmingSkillsD;
+var microsoftSkillsX, microsoftSkillsY, microsoftSkillsD;
+var otherSkillsX, otherSkillsY, otherSkillsD ;
+var adobeExitX, adobeExitY, adobeExitD;
+var programmingExitX, programmingExitY, programmingExitD;
+var microsoftExitX, microsoftExitY, microsoftExitD;
+var otherExitX, otherExitY, otherExitD;
 
 function setup() {
-  canvas = createCanvas (2560, 1220);
-  ellipseMode(CENTER);
+	canvas = createCanvas(2560,1220);
+	ellipseMode(CENTER);
 
-  //SETTING UP IMAGES FOR WINDOW WIDTH BELOW 600PX
-  mobileAni1 = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/rotate-mobile-1.png");
-  mobileAni2 = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/rotate-mobile-2.png");
+	// LINK IMAGES TO THEIR VARIABLES
+	mobileAni1 = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/rotate-mobile-1.png");
+	mobileAni2 = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/rotate-mobile-2.png");
 
-  //SETTING UP IMAGES FOR WINDOW WIDTH ABOVE 600PX
-  selectionMenu = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/selection-menu.png");
-  experienceOne = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/experience-slide-1.png");
-  experienceTwo = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/experience-slide-2.png");
-  experienceThree = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/experience-slide-3.png");
-  skillsMenu = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/skills-select.png");
-  skillsAdobe = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/skills-adobe.png");
-  skillsProgramming = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/skills-programming.png");
-  skillsMicrosoft = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/skills-microsoft.png");
-  skillsOther = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/skills-other.png");
+	menuSelection = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/menuSelection.png");
+	experienceOne = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/experienceOne.png");
+	experienceTwo = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/experienceTwo.png");
+	menuSkills = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/menuSkills.png");
+	adobeSkills = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/adobeSkills.png");
+	programmingSkills = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/programmingSkills.png");
+	microsoftSkills = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/microsoftSkills.png");
+	otherSkills = loadImage("https://raw.githubusercontent.com/daphnek95/interactive-images/master/otherSkills.png");
 
-  //Defining integers
-  optionExpX = 584;
-  optionSkillX = 1975;
-  optionButtonsY = 689;
-  optionButtonsD = 961;
+	// DEFINING INTEGERS FOR VARIABLES
+	experienceOptionX = 587;
+	skillsOptionX = 1976;
+	optionButtonsY = 674;
+	optionButtonsD = 952;
 
-  oneMenuX = 2335;
-  oneMenuY = 26;
-  oneMenuW = 180;
-  oneMenuH = 68;
+	menuOneX = 92;
+	menuOneY = 127;
+	menuOneD = 136;
 
-  oneRArrowX = 2368;
-  oneRArrowY = 546;
-  oneRArrowW = 102;
-  oneRArrowH = 110;
+	rArrowOneX = 2458;
+	rArrowOneY = 596;
+	rArrowOneD = 108;
 
-  twoMenuX = 2320;
-  twoMenuY = 20;
-  twoMenuW = 116;
-  twoMenuH = 65;
+	menuTwoX = 92;
+	menuTwoY = 127;
+	menuTwoD = 136;
 
-  twoLArrowX = 74;
-  twoLArrowY = 550;
-  twoLArrowW = 116;
-  twoLArrowH = 116;
+	lArrowTwoX = 103;
+	lArrowTwoY = 596;
+	lArrowTwoD = 108;
 
-  twoRArrowX = 2360;
-  twoRArrowY = 550;
-  twoRArrowW = 112;
-  twoRArrowH = 116;
+	menuSkillsX = 91;
+	menuSkillsY = 126;
+	menuSkillsD = 136;
 
-  threeMenuX = 2314;
-  threeMenuY = 20;
-  threeMenuW = 190;
-  threeMenuH = 64;
+	adobeSkillsX = 2258;
+  adobeSkillsY = 274;
+  adobeSkillsD = 103;
 
-  threeLArrowX = 70;
-  threeLArrowY = 560;
-  threeLArrowW = 100;
-  threeLArrowH = 95;
+	programmingSkillsX = 2258;
+  programmingSkillsY = 519;
+  programmingSkillsD = 103;
 
-  skillsMenuX = 2339;
-  skillsMenuY = 19;
-  skillsMenuW = 201;
-  skillsMenuH = 70;
-  skillsMAdobeX = 310;
-  skillsMProgrammingX = 949;
-  skillsMMicrosoftX = 1600;
-  skillsMOtherX = 2249;
-  skillButtonsY = 635;
-  skillButtonsD = 570;
+	microsoftSkillsX = 2258;
+  microsoftSkillsY = 766;
+  microsoftSkillsD = 103;
 
-  adobeExitX = 2415;
-  adobeExitY = 25;
-  adobeExitW = 120;
-  adobeExitH = 125;
+	otherSkillsX = 2258;
+  otherSkillsY = 1011;
+  otherSkillsD = 103;
 
-  programmingExitX = 2380;
-  programmingExitY = 20;
-  programmingExitW = 110;
-  programmingExitH = 130;
+	adobeExitX = 146;
+	adobeExitY = 127;
+	adobeExitD = 150;
 
-  microsoftExitX = 2400;
-  microsoftExitY = 35;
-  microsoftExitW = 110;
-  microsoftExitH = 125;
+	programmingExitX = 146;
+	programmingExitY = 127;
+	programmingExitD = 150;
 
-  otherExitX = 2415;
-  otherExitY = 30;
-  otherExitW = 115;
-  otherExitH = 125;
+	microsoftExitX = 146;
+	microsoftExitY = 127;
+	microsoftExitD = 150;
 
-  //Moving canvas inside sketch div
-  canvas.parent('interactive-resume-holder');
+	otherExitX = 146;
+	otherExitY = 127;
+	otherExitD = 150;
+
+	// MOVE CANVAS INSIDE SKETCH DIV
+	canvas.parent('interactive-resume-holder');
 }
 
 function draw() {
-  if (windowWidth < 600) {
+  if(windowWidth < 600) {
     counter = counter - 1;
-    if(counter < 0) {
-      ani = ani + 1;
-      if(ani > 1) {
-        ani = 0;
-      }
-      counter = 60;
-      background(171,178,202);
-    }
-    switch(ani){
-      case 0: //animation frame one
-        image(mobileAni1,0,0);
-        break;
+		if(counter < 0) {
+			ani = ani + 1;
+			if(ani > 1) {
+				ani = 0;
+			}
+			counter = 65;
+			background(171, 178, 202);
+		}
 
-      case 1: //animation frame two
-        image(mobileAni2,0,0);
-        break;
-    }
+    switch(ani) {
+			case 0: // phase one of animation
+				image(mobileAni1, 0, 0);
+				break;
+
+			case 1: // phase two of animation
+				image(mobileAni2, 0, 0);
+				break;
+		}
   } else {
-    update(mouseX, mouseY);
-    background(171,178,202);
-    noStroke();
-    fill(0,0,0,0);
+    background(171, 178, 202);
+		noStroke();
+		fill(0, 0, 0, 0);
+
     switch(state) {
-      case 0: //select between experience or skills
-        image(selectionMenu,0,0);
-        ellipse(optionExpX, optionButtonsY, optionButtonsD, optionButtonsD);
-        ellipse(optionSkillX, optionButtonsY, optionButtonsD, optionButtonsD);
-        if(circleOverExp){
+      case 0: // menu screen
+        image(menuSelection, 0, 0);
+        ellipse(experienceOptionX, optionButtonsY, optionButtonsD, optionButtonsD);
+        ellipse(skillsOptionX, optionButtonsY, optionButtonsD, optionButtonsD);
+
+        var experienceButtonHover = dist(mouseX, mouseY, experienceOptionX, optionButtonsY);
+				var skillsButtonHover = dist(mouseX, mouseY, skillsOptionX, optionButtonsY);
+				if(experienceButtonHover < optionButtonsY/1.4) {
+					cursor(HAND);
+				} else if(skillsButtonHover < optionButtonsY/1.4) {
+					cursor(HAND);
+				} else {
+					cursor(ARROW);
+				}
+        break;
+
+      case 1: // experience slide one
+        image(experienceOne, 0, 0);
+        ellipse(menuOneX, menuOneY, menuOneD, menuOneD);
+        ellipse(rArrowOneX, rArrowOneY, rArrowOneD, rArrowOneD);
+
+        var menuOneHover = dist(mouseX, mouseY, menuOneX, menuOneY);
+        var rArrowOneHover = dist(mouseX, mouseY, rArrowOneX, rArrowOneY);
+        if(menuOneHover < menuOneY/2) {
           cursor(HAND);
-        } else if(circleOverSkill) {
+        } else if(rArrowOneHover < rArrowOneY/8) {
           cursor(HAND);
         } else {
           cursor(ARROW);
         }
         break;
-      case 1: //if selected experience option - experience slide one
-        image(experienceOne,0,0);
-        rect(oneMenuX, oneMenuY, oneMenuW, oneMenuH);
-        rect(oneRArrowX, oneRArrowY, oneRArrowW, oneRArrowH);
-        if(rectOverOneMenu) {
+
+      case 2: // experience slide two
+        image(experienceTwo, 0, 0);
+        ellipse(menuTwoX, menuTwoY, menuTwoD, menuTwoD);
+        ellipse(lArrowTwoX, lArrowTwoY, lArrowTwoD, lArrowTwoD);
+
+        var menuTwoHover = dist(mouseX, mouseY, menuTwoX, menuTwoY);
+        var lArrowTwoHover = dist(mouseX, mouseY, lArrowTwoX, lArrowTwoY);
+        if(menuTwoHover < menuTwoY/2) {
           cursor(HAND);
-        } else if(rectOverOneRArrow) {
-          cursor(HAND);
-        } else {
-          cursor(ARROW);
-        }
-        break;
-      case 2: //if selected right arrow from case 1 - experience slide two
-        image(experienceTwo,0,0);
-        rect(twoMenuX, twoMenuY, twoMenuW, twoMenuH);
-        rect(twoLArrowX, twoLArrowY, twoLArrowW, twoLArrowH);
-        rect(twoRArrowX, twoRArrowY, twoRArrowW, twoRArrowH);
-        if(rectOverTwoMenu) {
-          cursor(HAND);
-        } else if(rectOverTwoLArrow) {
-          cursor(HAND);
-        } else if(rectOverTwoRArrow) {
+        } else if(lArrowTwoHover < lArrowTwoY/8) {
           cursor(HAND);
         } else {
           cursor(ARROW);
         }
         break;
-      case 3: //if selected right arrow from case 2 - experience slide three
-        image(experienceThree,0,0);
-        rect(threeMenuX, threeMenuY, threeMenuW, threeMenuH);
-        rect(threeLArrowX, threeLArrowY, threeLArrowW, threeLArrowH);
-        if(rectOverThreeMenu) {
+
+      case 3: // menu skills select
+        image(menuSkills, 0, 0);
+        ellipse(menuSkillsX, menuSkillsY, menuSkillsD, menuSkillsD);
+        ellipse(adobeSkillsX, adobeSkillsY, adobeSkillsD, adobeSkillsD);
+        ellipse(programmingSkillsX, programmingSkillsY, programmingSkillsD, programmingSkillsD);
+        ellipse(microsoftSkillsX, microsoftSkillsY, microsoftSkillsD, microsoftSkillsD);
+        ellipse(otherSkillsX, otherSkillsY, otherSkillsD, otherSkillsD);
+
+        var menuSkillsHover = dist(mouseX, mouseY, menuSkillsX, menuSkillsY);
+        var adobeSkillsHover = dist(mouseX, mouseY, adobeSkillsX, adobeSkillsY);
+        var programmingSkillsHover = dist(mouseX, mouseY, programmingSkillsX, programmingSkillsY);
+        var microsoftSkillsHover = dist(mouseX, mouseY, microsoftSkillsX, microsoftSkillsY);
+        var otherSkillsHover = dist(mouseX, mouseY, otherSkillsX, otherSkillsY);
+        if(menuSkillsHover < menuSkillsY/2) {
           cursor(HAND);
-        } else if(rectOverThreeLArrow) {
+        } else if(adobeSkillsHover < adobeSkillsY/4) {
           cursor(HAND);
-        } else {
-          cursor(ARROW);
-        }
-        break;
-      case 4: //if selected skills option from case 0 - skills selection menu
-        image(skillsMenu,0,0);
-        rect(skillsMenuX, skillsMenuY, skillsMenuW, skillsMenuH);
-        ellipse(skillsMAdobeX, skillButtonsY, skillButtonsD, skillButtonsD);
-        ellipse(skillsMProgrammingX, skillButtonsY, skillButtonsD, skillButtonsD);
-        ellipse(skillsMMicrosoftX, skillButtonsY, skillButtonsD, skillButtonsD);
-        ellipse(skillsMOtherX, skillButtonsY, skillButtonsD, skillButtonsD);
-        if(rectOverSkillsMenu) {
+        } else if(programmingSkillsHover < programmingSkillsY/8) {
           cursor(HAND);
-        } else if(circleOverSkillsMAdobe) {
+        } else if(microsoftSkillsHover < microsoftSkillsY/10) {
           cursor(HAND);
-        } else if(circleOverSkillsMProgramming) {
-          cursor(HAND);
-        } else if(circleOverSkillsMMicrosoft) {
-          cursor(HAND);
-        } else if(circleOverSkillsMOther) {
+        } else if(otherSkillsHover < otherSkillsY/12) {
           cursor(HAND);
         } else {
           cursor(ARROW);
         }
         break;
-      case 5: //if selected Adobe from case 4
-        image(skillsAdobe,0,0);
-        rect(adobeExitX, adobeExitY, adobeExityW, adobeExitH);
-        if(rectOverAdobeExit) {
+
+      case 4: // adobe
+        image(adobeSkills, 0, 0);
+        ellipse(adobeExitX, adobeExitY, adobeExitD, adobeExitD);
+
+        var adobeExitHover = dist(mouseX, mouseY, adobeExitX, adobeExitY);
+        if(adobeExitHover < adobeExitY/2) {
           cursor(HAND);
         } else {
           cursor(ARROW);
         }
         break;
-      case 6: //if selected Programming from case 4
-        image(skillsProgramming,0,0);
-        rect(programmingExitX, programmingExitY, programmingExitW, programmingExitH);
-        if(rectOverProgrammingExit) {
+
+      case 5: // programming
+        image(programmingSkills, 0, 0);
+        ellipse(programmingExitX, programmingExitY, programmingExitD, programmingExitD);
+
+        var programmingExitHover = dist(mouseX, mouseY, programmingExitX, programmingExitY);
+        if(programmingExitHover < programmingExitY/2) {
           cursor(HAND);
         } else {
           cursor(ARROW);
         }
         break;
-      case 7: //if selected Microsoft from case 4
-        image(skillsMicrosoft,0,0);
-        rect(microsoftExitX, microsoftExitY, microsoftExitW, microsoftExitH);
-        if(rectOverMicrosoftExit) {
+
+      case 6: // microsoft
+        image(microsoftSkills, 0, 0);
+        ellipse(microsoftExitX, microsoftExitY, microsoftExitD, microsoftExitD);
+
+        var microsoftExitHover = dist(mouseX, mouseY, microsoftExitX, microsoftExitY);
+        if(microsoftExitHover < microsoftExitY/2) {
           cursor(HAND);
         } else {
           cursor(ARROW);
         }
         break;
-      case 8: //if selected Other from case 4
-        image(skillsOther,0,0);
-        rect(otherExitX, otherExitY, otherExitW, otherExitH);
-        if(rectOverOtherExit) {
+
+      case 7: // other
+        image(otherSkills, 0, 0);
+        ellipse(otherExitX, otherExitY, otherExitD, otherExitD);
+
+        var otherExitHover = dist(mouseX, mouseY, otherExitX, otherExitY);
+        if(otherExitHover < otherExitY/2) {
           cursor(HAND);
         } else {
           cursor(ARROW);
@@ -327,220 +266,83 @@ function draw() {
   }
 }
 
-function update() {
-  //Selection menu
-  if(overOptionExp && state == 0) {
-    circleOverExp = true;
-    circleOverSkill = false;
-  } else if(overOptionSkill && state == 0) {
-    circleOverSkill = true;
-    circleOverExp = false;
-  } else {
-    circleOverExp = circleOverSkill = false;
-  }
-
-  //Experience Slide One
-  if(overOneMenu && state == 1) {
-    rectOverOneMenu = true;
-    rectOverOneRArrow = false;
-  } else if(overOneRArrow && state == 1) {
-    rectOverRArrow = true;
-    rectOverOneMenu = false;
-  } else {
-    rectOverOneMenu = rectOverRArrow = false;
-  }
-
-  //Experience Slide Two
-  if(overTwoMenu && state == 2) {
-    rectOverTwoMenu = true;
-    rectOverTwoLArrow = rectOverTwoRArrow = false;
-  } else if(overTwoLArrow && state == 2) {
-    rectOverTwoLArrow = true;
-    rectOverTwoMenu = rectOverTwoRArrow = false;
-  } else if(overTwoRArrow && state == 2) {
-    rectOverTwoRArrow = true;
-    rectOverTwoMenu = rectOverTwoLArrow = false;
-  } else {
-    rectOverTwoMenu = rectOverTwoLArrow = rectOverTwoRArrow = false;
-  }
-
-  //Experience Slide Three
-  if(overThreeMenu && state == 3) {
-    rectOverThreeMenu = true;
-    rectOverThreeLArrow = false;
-  } else if(overThreeLArrow && state == 3) {
-    rectOverThreeLArrow = true;
-    rectOverThreeMenu = false;
-  } else {
-    rectOverThreeMenu = rectOverThreeLArrow = false;
-  }
-
-  //Skills Selection Menu
-  if(overSkillsMenu && state == 4) {
-    rectOverSkillsMenu = true;
-    circleOverSkillsMAdobe = circleOverSkillsMProgramming = circleOverSkillsMMicrosoft = circleOverSkillsMOther = false;
-  } else if(overAdobeSkill && state == 4) {
-    circleOverSkillsMAdobe = true;
-    rectOverSkillsMenu = circleOverSkillsMProgramming = circleOverSkillsMMicrosoft = circleOverSkillsMOther = false;
-  } else if(overProgrammingSkill && state == 4) {
-    circleOverSkillsMProgramming = true;
-    rectOverSkillsMenu = circleOverSkillsMAdobe = circleOverSkillsMMicrosoft = circleOverSkillsMOther = false;
-  } else if(overMicrosoftSkill && state == 4) {
-    circleOverSkillsMMicrosoft = true;
-    rectOverSkillsMenu = circleOverSkillsMAdobe = circleOverSkillsMProgramming = circleOverSkillsMOther = false;
-  } else if(overOtherSkill && state == 4) {
-    circleOverSkillsMOther = true;
-    rectOverSkillsMenu = circleOverSkillsMAdobe = circleOverSkillsMProgramming = circleOverSkillsMMicrosoft = false;
-  } else {
-    rectOverSkillsMenu = circleOverSkillsMAdobe = circleOverSkillsMProgramming = circleOverSkillsMMicrosoft = circleOverSkillsMOther = false;
-  }
-
-  //Adobe Skills
-  if(overAdobeExit && state == 5) {
-    rectOverAdobeExit = true;
-  } else {
-    rectOverAdobeExit = false;
-  }
-
-  //Programming Skills
-  if(overProgrammingExit && state == 6) {
-    rectOverProgrammingExit = true;
-  } else {
-    rectOverProgrammingExit = false;
-  }
-
-  //Microsoft Skills
-  if(overMicrosoftExit && state == 7) {
-    rectOverMicrosoftExit = true;
-  } else {
-    rectOverMicrosoftExit = false;
-  }
-
-  //Other Skills
-  if(overOtherExit && state == 8) {
-    rectOverOtherExit = true;
-  } else {
-    rectOverOtherExit = false;
-  }
-}
-
-function mousePressed() {
-  if(circleOverExp && state == 0) {
+function mouseClicked() {
+  var experienceButtonClick = dist(mouseX, mouseY, experienceOptionX, optionButtonsY);
+  if(experienceButtonClick < optionButtonsY/1.4 && state == 0) {
     state = 1;
   }
 
-  if(rectOverOneMenu && state == 1) {
+  var skillsButtonClick = dist(mouseX, mouseY, skillsOptionX, optionButtonsY);
+  if(skillsButtonClick < optionButtonsY/1.4 && state == 0) {
+    state = 3
+  }
+
+  var menuOneClick = dist(mouseX, mouseY, menuOneX, menuOneY);
+  if(menuOneClick < menuOneY/2 && state == 1) {
     state = 0;
   }
 
-  if(rectOverOneRArrow && state == 1) {
+  var rArrowOneClick = dist(mouseX, mouseY, rArrowOneX, rArrowOneY);
+  if(rArrowOneClick < rArrowOneY/8 && state == 1) {
     state = 2;
   }
 
-  if(rectOverTwoMenu && state == 2) {
+  var menuTwoClick = dist(mouseX, mouseY, menuTwoX, menuTwoY);
+  if(menuTwoClick < menuTwoY/2 && state == 2) {
     state = 0;
   }
 
-  if(rectOverTwoLArrow && state == 2) {
+  var lArrowTwoClick = dist(mouseX, mouseY, lArrowTwoX, lArrowTwoY);
+  if(lArrowTwoClick < lArrowTwoY/8 && state == 2) {
     state = 1;
   }
 
-  if(rectOverTwoRArrow && state == 2) {
-    state = 3;
-  }
-
-  if(rectOverThreeMenu && state == 3) {
+  var menuSkillsClick = dist(mouseX, mouseY, menuSkillsX, menuSkillsY);
+  if(menuSkillsClick < menuSkillsY/2 && state == 3) {
     state = 0;
   }
 
-  if(rectOverThreeLArrow && state == 3) {
-    state = 2;
-  }
-
-  if(circleOverSkill && state == 0) {
+  var adobeSkillsClick = dist(mouseX, mouseY, adobeSkillsX, adobeSkillsY);
+  if(adobeSkillsClick < adobeSkillsY/4 && state == 3) {
     state = 4;
   }
 
-  if(rectOverSkillsMenu && state == 4) {
-    state = 0;
-  }
-
-  if(circleOverSkillsMAdobe && state == 4) {
+  var programmingSkillsClick = dist(mouseX, mouseY, programmingSkillsX, programmingSkillsY);
+  if(programmingSkillsClick < programmingSkillsY/8 && state == 3) {
     state = 5;
   }
 
-  if(circleOverSkillsMProgramming && state == 4) {
+  var microsoftSkillsClick = dist(mouseX, mouseY, microsoftSkillsX, microsoftSkillsY);
+  if(microsoftSkillsClick < microsoftSkillsY/10 && state == 3) {
     state = 6;
   }
 
-  if(circleOverSkillsMMicrosoft && state == 4) {
+  var otherSkillsClick = dist(mouseX, mouseY, otherSkillsX, otherSkillsY);
+  if(otherSkillsClick < otherSkillsY/12 && state == 3) {
     state = 7;
   }
 
-  if(circleOverSkillsMOther && state == 4) {
-    state = 8;
+  var adobeExitClick = dist(mouseX, mouseY, adobeExitX, adobeExitY);
+  if(adobeExitClick < adobeExitY/2 && state == 4) {
+    state = 3;
   }
 
-  if(rectOverAdobeExit && state == 5) {
-    state = 4;
+  var programmingExitClick = dist(mouseX, mouseY, programmingExitX, programmingExitY);
+  if(programmingExitClick < programmingExitY/2 && state == 5) {
+    state = 3;
   }
 
-  if(rectOverProgrammingExit && state == 6) {
-    state = 4;
+  var microsoftExitClick = dist(mouseX, mouseY, microsoftExitX, microsoftExitY);
+  if(microsoftExitClick < microsoftExitY/2 && state == 6) {
+    state = 3;
   }
 
-  if(rectOverMicrosoftExit && state == 7) {
-    state = 4;
-  }
-
-  if(rectOverOtherExit && state == 8) {
-    state = 4;
-  }
-}
-
-//DEFINE VARS FROM VOID UPDATE()
-function overOptionExp(optionExpX, optionButtonsY, optionButtonsD) {
-  var disX = optionExpX - mouseX;
-  var disY = optionButtonsY - mouseY;
-  if(sqrt(sq(disX) + sq(disY)) < optionButtonsD/2) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function overOneMenu(oneMenuX, oneMenuY, oneMenuW, oneMenuH) {
-  if(mouseX >= oneMenuX && mouseX <= oneMenuX + oneMenuW && mouseY >= oneMenuY && mouseY <= oneMenuY + oneMenuH) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function overOneRArrow(oneRArrowX, oneRArrowY, oneRArrowW, oneRArrowH) {
-  if(mouseX >= oneRArrowX && mouseX <= oneRArrowX + oneRArrowW && mouseY >= oneRArrowY && mouseY <= oneRArrowY + oneRArrowH) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function overTwoMenu(twoMenuX, twoMenuY, twoMenuW, twoMenuH) {
-  if(mouseX >= twoMenuX && mouseX <= twoMenuX + twoMenuW && mouseY >= twoMenuY && mouseY <= twoMenuY + twoMenuH) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function overTwoLArrow(twoLArrowX, twoLArrowY, twoLArrowW, twoLArrowH) {
-  if(mouseX >= twoLArrowX && mouseX <= twoLArrowX + twoLArrowW && mouseY >= twoLArrowY && mouseY <= twoLArrowY + twoLArrowH) {
-    return true;
-  } else {
-    return false;
+  var otherExitClick = dist(mouseX, mouseY, otherExitX, otherExitY);
+  if(otherExitClick < otherExitY/2 && state == 7) {
+    state = 3;
   }
 }
 
 function windowResized() {
-  canvas = resizeCanvas(2560, 1220);
+	canvas = resizeCanvas(2560, 1220);
 }
