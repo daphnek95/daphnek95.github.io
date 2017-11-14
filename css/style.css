@@ -313,7 +313,8 @@ button,
 
 #featured-work-section {text-align: center; padding: 1.54em; background-color: #FCCBB0;}
 
-#home-section,
+#home-section {padding: 1em 1.54em .54em;}
+
 #resume-section,
 #artwork-section,
 #footer-section {
@@ -367,7 +368,7 @@ footer {
 
 nav img {
   height: auto;
-  margin-bottom: 2.54em;
+  margin-bottom: 1em;
   max-width: 300px;
   width: 100%;
 }
@@ -490,11 +491,6 @@ audio {
 ------------- MEDIA --------------
 ------------ QUERIES -------------
 ================================*/
-@media all and (max-width: 600px) {
-  #home-section {padding: 1em 1.54em .54em;}
-  nav img {margin-bottom: 1em;}
-}
-
 @media all and (min-width: 500px) {.art-group {width: 49%;}}
 
 @media all and (min-width: 520px) {
@@ -504,6 +500,8 @@ audio {
 
 @media all and (min-width: 600px) {
   /*--- homepage ---*/
+  #home-section {padding: 1.54em;}
+  nav img {margin-bottom: 2.54em;}
   #home-content {text-align: left;}
   #info-card img {margin: 0 auto .54em; width: 35%;}
   #contact-content {padding: 1.54em;}
