@@ -57,12 +57,12 @@ h3 {
 }
 
 #resume-section h2,
-#featured-work-section h2,
-#featured-work-section h3,
+#featured-deals h2,
+#featured-deals h3,
 #artwork-section h2,
 #artwork-section h3,
-#info-section h2,
-#info-section h3,
+#featured-deals h2,
+#featured-deals h3,
 #contact-section h2,
 #gallery-section h2 {color: #536399;}
 
@@ -70,7 +70,7 @@ h3 {
 
 #gallery-section h3 {color: #536399;}
 
-#featured-work-section p,
+#featured-deals p,
 #artwork-section h2 {margin-bottom: 2.25em;}
 
 #form-social h3 {color: black;}
@@ -95,8 +95,7 @@ a:focus {
 }
 
 .bold-statement {
-  color: #F0FBFF;
-  text-shadow: rgba(0,0,0,0.35) 0 .1em .54em;
+  color: #536399;
   font-size: 1.54em;
   font-style: italic;
 }
@@ -111,28 +110,31 @@ a:focus {
   margin-bottom: .15em;
 }
 
-#resume-content,
-#artwork-section,
-#info-section h2 {
+#featured-deals,
+#gallery-section {
 	text-align: center;
 }
-
-#info-deck h2 {
-	margin-top: 1.54em;
-}
+#featured-deals-content p {line-height: 1.54em;}
 
 /*================================
 ------------ STANDARD ------------
 ------------ LAYOUTS -------------
 ================================*/
+.visually-hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 
 body {
   margin: 0;
-  background-color: #F0FBFF;
+  background-color: #536399;
 }
 
-#featured-work-section img,
-#artwork-section img,
+#featured-deals img,
 #gallery-section img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -140,8 +142,7 @@ body {
     transition: filter .5s;
 }
 
-#featured-work-section img:hover,
-#artwork-section img:hover,
+#featured-deals img:hover,
 #gallery-section img:hover {
   filter: none;
 }
@@ -292,17 +293,16 @@ button,
   background-color: #536399;
 }
 
-#info-section,
-#contact-section {background-color: #ABB3CC;}
+#featured-deals {background-color: #FCCBB0;}
 
-#contact-section {padding: 1.54em;}
+#contact-section {background-color: #ABB3CC; padding: 1.54em;}
 
-#featured-work-section {text-align: center; padding: 1.54em; background-color: #FCCBB0;}
+#featured-deals {text-align: center; padding: 1.54em; background-color: #FCCBB0;}
 
 #home-section {padding: 1em 1.54em .54em;}
 
-#info-section,
-#artwork-section,
+#featured-deals,
+#gallery-section,
 #footer-section {
   padding: 1.54em;
 }
@@ -337,33 +337,26 @@ button,
 }
 
 
-#artwork-section {background-color: #F0FBFF;}
-
-.featured-group {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 3.25em;
-}
-
-.featured-group img {
-  border-radius: 50%;
-  max-width: 960px;
-  width: 68%;
-  height: auto;
-  border: 8px solid white;
-  box-shadow: rgba(0,0,0,0.5) 0 0.25em 1em;
-}
+#gallery-section {background-color: #F0FBFF; padding-bottom: 0;}
 
 .art-group {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 3.25em;
+}
+
+.art-group a {
+  width: 50%;
+  padding-bottom: 1.54em;
 }
 
 .art-group img {
   border-radius: 50%;
   max-width: 960px;
-  width: 55%;
+  width: 80%;
   height: auto;
   border: 8px solid white;
   box-shadow: rgba(0,0,0,0.5) 0 0.25em 1em;
@@ -392,12 +385,6 @@ footer li {
   vertical-align: middle;
 }
 
-#info-card {
-  text-align: center;
-	margin-bottom: 3em;
-  line-height: 1.54em;
-}
-
 #contact-content {
   display: block;
   margin: 0 auto;
@@ -411,76 +398,18 @@ footer li {
 	margin-top: 2em;
 }
 
-#footer-content #back-to-top {
+#footer-content .back-to-top {
 	text-align: right;
 	margin-right: 1em;
 }
 
-#back-to-top li {
+.back-to-top li {
   text-align: center;
 }
 
-#back-to-top li a i {
+.back-to-top li a i {
   font-size: 2em;
 }
-
-/*--- galleries ---*/
-.two-small-images {
-  display: inline-block;
-  margin-top: 1.54em;
-  margin-left: 1em;
-  text-align: center;
-  width: 30%;
-  vertical-align: middle;
-}
-
-.two-small-images img,
-.one-large-image img {
-  border: 8px solid white;
-  border-radius: 50%;
-  box-shadow: rgba(0,0,0,0.5) 0 0.25em 1.15em;
-  max-width: 960px;
-  margin-bottom: 1.54em;
-  width: 90%;
-  height: auto;
-}
-
-.one-large-image {
-  display: inline-block;
-  margin-top: 1.54em;
-  text-align: center;
-  width: 60%;
-  vertical-align: middle;
-}
-
-.audio-half {
-  display: inline-block;
-  margin: 1.54em 0 0 1.54em;
-  vertical-align: middle;
-  width: 50%;
-}
-
-audio {
-  background: #536399;
-  box-shadow: rgba(0,0,0,0.5) 0 0 0.25em;
-  margin-bottom: .54em;
-  margin-right: 1.54em;
-  padding: .35em;
-  width: 100%;
-}
-
-.project-description {
-  border-bottom: double #FCCBB0;
-  display: inline-block;
-  margin-left: 1em;
-  padding-bottom: .54em;
-  width: 90%;
-  vertical-align: middle;
-}
-
-.project-description p {padding-right: .75em;}
-
-.last-grouping {margin-bottom: 1em; border-bottom: none;}
 
 /*================================
 ------------- MEDIA --------------
@@ -493,35 +422,17 @@ audio {
 }
 
 @media all and (min-width: 600px) {
-  /*--- homepage ---*/
   #home-section {padding: 1.54em;}
   nav img {margin-bottom: 2.54em;}
   #home-content {text-align: left;}
   #contact-content {padding: 1.54em;}
-  .featured-group {vertical-align: top; max-width: 960px; width: 32%;}
-  .art-group {vertical-align: top; max-width: 960px; width: 48%;}
-}
-
-@media all and (min-width: 700px) {
-  .featured-group {width: 32%;}
-  .two-small-images {width: 18%;}
-  .one-large-image {width: 40%;}
-  .two-small-images,
-  .project-description {margin-left: 1.54em;}
-  .project-description {margin-left: 1em; width: 35%; border-bottom: none;}
-  .project-description p {padding-right: 0;}
+  .art-group a {width: 32%;}
 }
 
 @media all and (min-width: 766px) {
-  /*--- homepage ---*/
   #home-content h1 img {margin-left: 0;}
-
-  #footer-content #back-to-top {
+  #footer-content .back-to-top {
     margin-right: 1.54em;
-  }
-  .scroll-down-arrow {
-    font-size: 1.45em;
-    margin: -24px 0;
   }
   /*--- form --*/
   form {width: 75%;}
@@ -531,14 +442,12 @@ audio {
   /*--- homepage ---*/
   li p {font-size: 1.25em;}
   #home-content h1 {font-size: 2.25em;}
-  .two-small-images {width: 15%;}
-  .one-large-image {width: 35%;}
-  .project-description {margin-left: 2em; width: 40%;}
 }
 
 @media all and (min-width: 1034px) {
   /*--- form --*/
   form {width: 60%;}
+  .art-group a {width: 25%;}
 }
 
 @media all and (min-width: 1220px) {

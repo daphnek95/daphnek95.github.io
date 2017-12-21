@@ -38,12 +38,8 @@
   <!-- Lightbox Javascript -->
   <script src="js/lightbox/dist/js/lightbox-plus-jquery.js"></script>
   <script>
-    lightbox.option({'wrapAround':true, 'disableScrolling':true})
+    lightbox.option({'wrapAround':true, 'disableScrolling':true, 'showImageNumberLabel':false})
   </script>
-
-  <!-- Interactive Resume p5.js & sketch -->
-  <script src="js/p5.min.js"></script>
-  <script src="interactive-resume/interactive-resume.js"></script>
 </head>
 
 <body>
@@ -63,76 +59,85 @@
       <nav>
         <img src="svg/logo.svg" alt="Daphne Elizabeth Studio"/>
         <ul>
-          <li><p><a href="#info-section">About</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
-          <li><p><a href="#artwork-section">Artwork</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
-          <li><p><a href="#contact-section">Connect</a></p></li>
+          <li><p><a href="#contact-section">Connect</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
+          <li><p><a href="#featured-deals">Deals</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
+          <li><p><a href="#gallery-section">Gallery</a></p></li>
         </ul>
       </nav>
     </div>
   </section>
-  <section id="info-section">
-    <div id="info-deck">
-      <h2>Meet the Artist</h2>
-      <div id="info-card">
-        <p>Daphne is an artist currently based in central Illinois. Aside from reading and binge-watching Harry Potter or Disney films, she enjoys taking portraits and creating graphics. <br/> Currently taking photography appointments.</p>
-        <p class="bold-statement">Work coming soon to Redbubble, Society 6, and Etsy!</p>
-
-        <!-- BELOW - add back in once added a few designs on Redbubble, Society 6, and Etsy -->
-
-        <!-- <p>Find my work on <a href="#" target="_blank" style="color: #F0FBFF;">Redbubble</a>, <a href="#" target="_blank" style="color: #F0FBFF;">Society 6</a> and <a href="#" target="_blank" style="color: #F0FBFF;">Etsy</a>.</p>
-      </div>
-      <div class="img-flex">
-        <img src="http://via.placeholder.com/960x960" alt="Redbubble"/>
-        <img src="http://via.placeholder.com/960x960" alt="Society 6"/>
-        <img src="http://via.placeholder.com/960x960" alt="Etsy"/>
-      </div> -->
+  <section id="featured-deals">
+    <div id="featured-deals-content">
+      <p class="bold-statement">Work now available on <a href="http://redbubble.com/people/daizzie-studio" target="_blank">Redbubble</a>!</p>
+      <p><i>No specials at this time</i><p>
+      <!-- <a href="#" target="_blank"><img src="#" alt="deal description"/></a> //Redbubble -->
     </div>
   </section>
-  <section id="featured-work-section">
-    <div id="featured-work-content">
-      <h2>Featured Work</h2>
-      <p>Click the images to view larger.</p>
-      <div class="featured-group">
-        <a href="media/graphic-design/skull-pin-large.png" data-lightbox="featured-work">
-          <img src="media/graphic-design/skull-pin-small.png" alt="A skull candy enamel pin in a pile of pins."/>
-        </a>
-        <h3>Enamel Pin</h3>
+  <section id="gallery-section">
+    <h2 class="visually-hidden">Artwork</h2>
+    <div class="art-group">
+      <div class="back-to-top" style="align-self: flex-end; order: 1;">
+        <ul>
+          <li><a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+          </li>
+        </ul>
       </div>
-      <div class="featured-group">
-        <a href="media/mixed-mediums/glass-baby-front-large.png" data-lightbox="featured-work">
-          <img src="media/mixed-mediums/glass-baby-front-small.png" alt="Glass shaped into the form of a baby shoe."/>
-        </a>
-        <h3>Glass Sneaker</h3>
-      </div>
-      <div class="featured-group">
-        <a href="media/photography/arcola-peacock-large.png" data-lightbox="featured-work">
-          <img src="media/photography/arcola-peacock-small.png" alt="A peacock turning its head to the left."/>
-        </a>
-        <h3>Wildlife Photography</h3>
-      </div>
-    </div>
-  </section>
-  <section id="artwork-section">
-    <h2>Artwork</h2>
-    <div class="art-group">
-      <img src="media/graphic-design/geo-pin-small.png" alt="Science atom with varied ribbons around it."/>
-      <h3>Graphic Design</h3>
-      <a href="graphic-design/index.html"><button>Browse designs</button></a>
-    </div>
-    <div class="art-group">
-      <img src="media/photography/concert-lights-small.png" alt="Singer on stage with dramatic spotlighting."/>
-      <h3>Photography</h3>
-      <a href="photography/index.html"><button>Browse photos</button></a>
-    </div>
-    <div class="art-group">
-      <img src="media/interactive-media/leap-motion-run-small.png" alt="Outer space image with planets spread about."/>
-      <h3>Interactive Media</h3>
-      <a href="interactive-media/index.html"><button>Browse installations</button></a>
-    </div>
-    <div class="art-group">
-      <img src="media/mixed-mediums/glass-mini-mug-small.png" alt="A small glass mug."/>
-      <h3>Mixed Mediums</h3>
-      <a href="mixed-mediums/index.html"><button>Browse mediums</button></a>
+      <!-- TO ADD MORE WORK:
+      <a href="http://via.placeholder.com/960x960" data-lightbox="gallery">
+        <img src="http://via.placeholder.com/960x960" alt="placeholder"/>
+      </a>
+      -->
+      <a href="media/gemini-large.jpg" data-lightbox="gallery" data-title="Gemini - available on Redbubble">
+        <img src="media/gemini-small.jpg" alt="Two women; one smiling and the other upset."/>
+      </a>
+      <a href="media/tears-of-roses-large.jpg" data-lightbox="gallery" data-title="Tears of Roses - available on Redbubble">
+        <img src="media/tears-of-roses-small.jpg" alt="An eye with roses coming out like tears."/>
+      </a>
+      <a href="media/love-sprung-from-hate-large.jpg" data-lightbox="gallery" data-title="Love Sprung From Hate - available on Redbubble">
+        <img src="media/love-sprung-from-hate-small.jpg" alt="Cherub reaching out to a girl daydreaming."/>
+      </a>
+      <a href="media/honey-dreams-large.jpg" data-lightbox="gallery" data-title="Honey Dreams - available on Redbubble">
+        <img src="media/honey-dreams-small.jpg" alt="Vintage style digital collage featuring a grown woman and a young child with flowers seperating them."/>
+      </a>
+      <a href="media/princess-at-peace-large.jpg" data-lightbox="gallery" data-title="Princess at Peace - available on Redbubble">
+        <img src="media/princess-at-peace-small.jpg" alt="Vintage style digital collage of a woman, flowers and two planets."/>
+      </a>
+      <a href="media/chills.gif" data-lightbox="gallery">
+        <img src="media/chills.jpg" alt="I got chills, they're multiplying."/>
+      </a>
+      <a href="media/avada-kedavra.gif" data-lightbox="gallery">
+        <img src="media/avada-kedavra.jpg" alt="A dark wizard casts a spell towards the viewer as the viewer flees."/>
+      </a>
+      <a href="media/concert-lights-large.png" data-lightbox="gallery">
+        <img src="media/concert-lights-small.png" alt="Bassist playing a bass solo under a spotlight."/>
+      </a>
+      <a href="media/kinetic-final.gif" data-lightbox="gallery">
+        <img src="media/kinetic-final.jpg" alt="Sculpture made of wood and aluminum that spins and reflects light."/>
+      </a>
+      <a href="media/glass-baby-front-large.png" data-lightbox="gallery">
+        <img src="media/glass-baby-front-small.png" alt="A small baby shoe made out of glass."/>
+      </a>
+      <a href="media/3d-balloon-bulbs-large.png" data-lightbox="gallery">
+        <img src="media/3d-balloon-bulbs-small.jpg" alt="3D rendering of lightbulbs where the glass is replaced with balloons."/>
+      </a>
+      <a href="media/glass-amphora-large.png" data-lightbox="gallery">
+        <img src="media/glass-amphora-small.png" alt="An amphora made from glass."/>
+      </a>
+      <a href="media/intaglio-food-large.png" data-lightbox="gallery">
+        <img src="media/intaglio-food-small.png" alt="Intalgio print of various vegetables and fruits."/>
+      </a>
+      <a href="media/windy-city-wieners-italian-large.png" data-lightbox="gallery">
+        <img src="media/windy-city-wieners-italian-small.png" alt="An italian beef sandwich"/>
+      </a>
+      <a href="media/aiesha-echols-sunglasses-large.png" data-lightbox="gallery">
+        <img src="media/aiesha-echols-sunglasses-small.png" alt="A student wearing college apparel."/>
+      </a>
+      <a href="media/geo-pin-large.png" data-lightbox="gallery">
+        <img src="media/geo-pin-small.png" alt="A geometric concept design for an enamel pin."/>
+      </a>
+      <a href="media/skull-pin-large.png" data-lightbox="gallery">
+        <img src="media/skull-pin-small.png" alt="Sugar skull enamel pin."/>
+      </a>
     </div>
   </section>
   <section id="contact-section">
@@ -162,12 +167,12 @@
     <div id="footer-content">
       <footer>
         <ul>
-          <li><p><a href="#info-section">About</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
-          <li><p><a href="#artwork-section">Artwork</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
-          <li><p><a href="#contact-section">Connect</a></p></li>
+          <li><p><a href="#contact-section">Connect</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
+          <li><p><a href="#featured-deals">Deals</a><i class="fa fa-circle" aria-hidden="true"></i></p></li>
+          <li><p><a href="#gallery-section">Gallery</a></p></li>
         </ul>
       </footer>
-      <div id="back-to-top">
+      <div class="back-to-top">
         <ul>
           <li><a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
           </li>
