@@ -49,98 +49,33 @@
 <body class="m-cont--tight m-pttn">
   <section id="about">
     <div class="about-wrapper">
-      <h1 class="blue--light">About Me</h1>
-      <h2 class="t--l">My name is Daphne Kraft.</h2>
-      <p>I am passionate about interactive technologies, graphic design, photography, and front-end web development.</p>
-      <p>Art is more than just an expression or a statement, but a powerful tool in communication. The opportunity to learn new mediums of art and blend art with technology is something I love to do. When I'm not designing, I geek out over Star Wars, Harry Potter and all things Disney. You might catch me reading or traveling too.</p>
-      <p>I have been blessed with amazing exposure in the graphic design and web design world. During my time at Illinois State University I got a bachelor's degree in Arts Technology - now known as Creative Technologies - I was able to be a graphic designer, web designer, and social media manager for a startup virtual reality arcade known as Immersion Arcade. I spent my time sketching, animating, designing and coding their brand to help bring in new customers. It was exciting to bring new concepts and ideas to the owners and work together to bring their company to life. During college, I also was a graphic designer for my university's program board where they were responsible for all school events. Each week for four years I chose new events to design posters, buttons, and advertisements for online, print, and tv. After graduating I was able to stay with my university full time as a Front-end Web Designer. I worked with a small but mighty team with innovative design concepts. I was given projects to design and code from start to finish, so I learned how to manage my time very well. All of that leads up to my time at Walt Disney World, leaving the art world behind temporarily to better learn how to engage with and work with people from all walks of life and making them happy. Working with guests at the Walt Disney parks and resorts keeps you on your feet, makes you a people-person, and makes one a wonderful problem-solver.</p>
-      <p>Recently I launched my own shop on Etsy selling original art pieces with resin. The design process usually starts with clay that I then turn into a silicone mold. Once the mold has cured I add and stylize resin to create one-of-a-kind pieces! You can check out my <a class="link-orange-bg" href="https://www.etsy.com/shop/delicateentity" target="_blank">shop</a> here!</p>
+      <div class="c-width--fat">
+        <h1 class="blue--light">About Me</h1>
+        <h2 class="t--l">My name is Daphne Kraft.</h2>
+        <p>I am passionate about interactive technologies, graphic design, photography, and front-end web development.</p>
+        <p class="force-left">Art is more than just an expression or a statement, but a powerful tool in communication. The opportunity to learn new mediums of art and blend art with technology is something I love to do. When I'm not designing, I geek out over Star Wars, Harry Potter and all things Disney. You might catch me reading or traveling too.</p>
+        <p class="force-left">Recently I began an adventure exploring resin and mold making and have a small <a class="link-orange-bg">Etsy Shop</a> open!</p>
+        <p>Career Goal: Seeking to apply my abilities to the position of graphic designer or within marketing. In the long run, seeking to grow as a creator and leader within a company.</p>
+      </div>
 
       <div class="nav--hvy bg-dflt m-top--fat">
         <div class="nav--hvy__row-left">
           <ul class="lis-itm--hvy lis-itm--hvy--left">
             <a class="lis-itm--hvy__left-col-one link-blue-bg" href="https://daphnek95.github.io/index.html"><li>Home</li></a>
             <a class="lis-itm--hvy__left-col link-blue-bg active active--blue-bg" href="https://daphnek95.github.io/about/index.html"><li>About</li></a>
-            <a class="lis-itm--hvy__left-col link-blue-bg" href="https://daphnek95.github.io/artwork/index.html"><li>Artwork</li></a>
-            <a class="lis-itm--hvy__left-col-one link-blue-bg" href="https://www.etsy.com/shop/delicateentity" target="_blank"><li>Shop</li></a>
+            <a class="lis-itm--hvy__left-col link-blue-bg" href="https://www.etsy.com/shop/delicateentity" target="_blank"><li>Shop</li></a>
           </ul>
         </div>
 
         <div class="nav--hvy__row-right ie">
           <ul class="lis-itm--hvy lis-itm--hvy--right">
-            <a class="lis-itm--hvy__right-col link-blue-bg" href="https://www.instagram.com/daizziestudio/" target="_blank"><li><span class="visuallyhidden">Instagram</span><i class="fab fa-instagram"></i></li></a>
+            <a class="lis-itm--hvy__right-col link-blue-bg" href="https://www.instagram.com/delicateentity/" target="_blank"><li><span class="visuallyhidden">Instagram</span><i class="fab fa-instagram"></i></li></a>
             <a class="lis-itm--hvy__right-col-one link-blue-bg" href="https://www.linkedin.com/in/daphne-kraft/" target="_blank"><li><span class="visuallyhidden">Linked In</span><i class="fab fa-linkedin-in"></i></li></a>
           </ul>
         </div>
       </div>
     </section> 
   </div>
-
-
-<script>
-
-  $("#formOne").click(function(){
-    $("#triggerOne").toggleClass("rotate");
-    $("#itmOne").toggleClass("appear");
-  })
-
-  $("#formTwo").click(function(){
-    $("#triggerTwo").toggleClass("rotate");
-    $("#itmTwo").toggleClass("appear");
-    $("#itmThree").toggleClass("appear");
-    $("#itmFour").toggleClass("appear");
-    $("#itmFive").toggleClass("appear");
-    $("#itmSix").toggleClass("appear");
-    $("#itmSeven").toggleClass("appear");
-    $("#itmEight").toggleClass("appear");
-  })
-  
-
-  filterSelection("all")
-  function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("artwork_project");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    projectRemoveClass(x[i], "artwork_project-reveal");
-    if (x[i].className.indexOf(c) > -1) projectAddClass(x[i], "artwork_project-reveal");
-  }
-  }
-
-  function projectAddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-  }
-
-  function projectRemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-  }
-
-
-  // Add artwork_btn-active class to the current button (highlight it)
-  var btnContainer = document.getElementById("artworkBtns");
-  var btns = btnContainer.getElementsByClassName("artwork_btn");
-  for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("artwork_btn-active");
-    current[0].className = current[0].className.replace(" artwork_btn-active", "");
-    this.className += " artwork_btn-active";
-  });
-  }
-
-</script>
 
 </body>
 
